@@ -5,6 +5,7 @@ public class MovementScript : MonoBehaviour {
 	// Use this for initialization
 	float direction, totalMoved;
 	bool moving;
+	public bool test=false;
 
 	void Start () {
 		totalMoved = 0;
@@ -15,7 +16,7 @@ public class MovementScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!moving) {
-			if (Input.GetKey ("1")) {
+			if (Input.GetKey ("1")&&test) {
 				//transform.Translate(Vector3.right*Mathf.Sqrt(3));
 				beginMoving (1);
 			} else if (Input.GetKey ("2")) {
@@ -51,8 +52,13 @@ public class MovementScript : MonoBehaviour {
 			if (totalMoved>1.5)
 				moving=false;
 		}
-		if (!moving)
+		if (!moving) {
 			totalMoved = 0;
+			if (Gameplay.currentPlayer==1)
+				Gameplay.currentPlayer=2;
+			else
+				Gameplay.currentPlayer=1;
+		}
 	}
 	void OnGUI(){
 		GUI.Label(new Rect(transform.position.x+10, 10, 100, 20),"Hello World");

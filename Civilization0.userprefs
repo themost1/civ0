@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Gameplay.cs">
+    <Files>
+      <File FileName="Assets/Gameplay.cs" Line="52" Column="5" />
+      <File FileName="Assets/Vehicle.cs" Line="5" Column="13" />
+      <File FileName="Assets/FireScript.cs" Line="15" Column="148" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
