@@ -176,11 +176,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flatHexagonSharedMesh: {fileID: 0}
   hexRadiusSize: 1
+  sweg: {fileID: 0}
   hexExt: {x: 0, y: 0, z: 0}
   hexSize: {x: 0, y: 0, z: 0}
   hexCenter: {x: 0, y: 0, z: 0}
   chunkHolder: {fileID: 0}
-  terrainTexture: {fileID: 2800000, guid: 24643d7cbf1364f9f8f9afa46ed2adaf, type: 3}
+  terrainTexture: {fileID: 2800000, guid: f7f9121f692ee45858a25a1d402d194d, type: 3}
   mapSize: {x: 20, y: 20}
   chunkSize: 4
 --- !u!4 &1606365463
@@ -209,6 +210,7 @@ GameObject:
   - 81: {fileID: 1998527587}
   - 114: {fileID: 1998527586}
   - 114: {fileID: 1998527592}
+  - 114: {fileID: 1998527593}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -308,3 +310,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tank: {fileID: 112792, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
   vNum: 0
+--- !u!114 &1998527593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998527585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744571c4575f34d1eb2f0969e75a5689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -54,6 +54,7 @@
      <Compile Include="Assets\HexChunk.cs" />
      <Compile Include="Assets\HexInfo.cs" />
      <Compile Include="Assets\MovementScript.cs" />
+     <Compile Include="Assets\SelectUnit.cs" />
      <Compile Include="Assets\TankGunScript.cs" />
      <Compile Include="Assets\Vehicle.cs" />
      <Compile Include="Assets\WorldManager.cs" />

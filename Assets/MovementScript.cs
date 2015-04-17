@@ -16,7 +16,7 @@ public class MovementScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!moving) {
-			if (Input.GetKey ("1")&&test) {
+			if (Input.GetKey ("1")) {
 				//transform.Translate(Vector3.right*Mathf.Sqrt(3));
 				beginMoving (1);
 			} else if (Input.GetKey ("2")) {

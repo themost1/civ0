@@ -29,7 +29,14 @@ public class Gameplay : MonoBehaviour {
 			vehicle = (GameObject)Instantiate(tank, new Vector3(1.7f,0.3f,1.5f*turn), new Quaternion(0,0,0,0));
 			vehicles.Add (vehicle);
 		}
-		selectVehicle ();
+		//selectVehicle ();
+		foreach (GameObject go in vehicles) {
+			if (Vector3.Distance(go.transform.position, SelectUnit.clickedHex.worldPosition)<=1)
+				selected=go;
+			go.GetComponent<Vehicle>().moved=false;
+		}
+		if (Vector3.Distance (selected.transform.position, SelectUnit.clickedHex.worldPosition) > 1)
+			selected = null;
 	}
 	void selectVehicle() {
 		//Debug.Log (vNum);
