@@ -31,12 +31,14 @@ public class Gameplay : MonoBehaviour {
 		}
 		//selectVehicle ();
 		foreach (GameObject go in vehicles) {
-			if (Vector3.Distance(go.transform.position, SelectUnit.clickedHex.worldPosition)<=1)
-				selected=go;
+			if(go != null && SelectUnit.clickedHex != null)
+				if (Vector3.Distance(go.transform.position, SelectUnit.clickedHex.worldPosition)<=1)
+					selected=go;
 			go.GetComponent<Vehicle>().moved=false;
 		}
-		if (Vector3.Distance (selected.transform.position, SelectUnit.clickedHex.worldPosition) > 1)
-			selected = null;
+		if(SelectUnit.clickedHex != null && selected != null)
+			if (Vector3.Distance (selected.transform.position, SelectUnit.clickedHex.worldPosition) > 1)
+				selected = null;
 	}
 	void selectVehicle() {
 		//Debug.Log (vNum);
