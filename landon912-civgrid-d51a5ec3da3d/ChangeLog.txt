@@ -1,0 +1,127 @@
+Version 0.1
+	+Added CivGrid namespace
+Version 0.2
+	-Removed old resource management system
+	+Refactored resource management system to provide better 	results and more features
+	+Refactored ResourceRules to make it more felxible for 	future expansion; also fixed large logic errors while 	handleing multiple terrainTypes
+	+Renamed "Tiles" to "Tile" for consistancy
+	-Removed ResourceManagerWindow until it is refactored
+	+Improved resource generation time
+	+Fixed Resource Feature check
+	+Fixed Resource Tile check
+Version 0.2.5
+	-Removed old improvement management system
+	+Refactored improvement management system to provide better 	results and more features
+	+Refactored ImprovementRules to make it more felxible for 	future expansion
+	+Implimented full ResourceManagerWindow
+	+Improved Improvement generation time(Still work needed)
+Version 0.3
+	+Added automatic texture atlasing algorithm
+	+Texture atlassing basic editor(more features coming soon)
+Version 0.3.f
+	+Fixed unlinked texture atlas
+	-Removed "edit" function from resource manager
+	+Made resource/improvement relationship more consistant
+	+Cleaned up improvement logic
+	+Improved improvement clicking logic
+	+Renamed "Resource Manager" window to "Add Resource"; 	window 	class remains the same
+	+Automatic "None" generation for resources
+Version 0.3.5
+	+Added regular hexagon dimension generation
+Version 0.4
+	+Optimized Improvements
+	+Added extensions methods for lists
+	+Added editor for texture atlas generation allowing all 	three types of terrain textures
+	+Refactored atlas generation
+	+Improved atlas usage
+	+Fixed editor memory leak
+	+Combined targeted atlases into one "Master" atlas
+	+General code clean up
+	+Added name array to both resource manager and the 	improvement manager
+	+Added TextureAtlas class to clean up WorldManager
+	+Implimented custom serializable dictionaries
+	+Improved editor logic and speed
+	+Resources are now NOT chunked with the hex
+	+Resources are there own object;
+	+Tiles with improvements/resource now correctly update 	their 	UV data to show the correct texture(IE: A hex with a 	farm 	improvement shows the terrain texture for the farm)
+	+Tiles now check if they need to change to 	Improvement/Resource texture correctly
+	+Resources now removed faster
+	+Moved actual resource creation to the resource manager
+	+Made ResourceManager naming more consistant with 	ImprovementManager
+	+Resource/Improvement GameObjects spawned under their chunks
+	+Added project to a git repository
+	+Cleaned up Changelog
+	+more stuff that I'm forgeting ;)
+Version 0.4.1f
+	+Fixed resource/improvement GameObject pooling on 	themselves allowing only one present at a time
+	+Changed "Tiles" enum to a class; giving more options
+	+Prepared for editor work
+Version 0.5
+	+Automatic asset refresh on atlas build
+	+Fixed UV mapping by removing a clamp
+	+Fixed improvements with a mountain/hill
+	+Fixed UV mapping upon removing an improvement
+	+Fixed padding on texture atlasing
+	+Multiple fixes in Texture atlasing
+	+Removed padding from texture atlasing and implimented in 	UV
+	+Custom editor windows for Improvements, Resources, and 	
+	Tiles
+	+Custom inspectors for WorldManager, ImprovementManager, 	ResourceManager, and TileManager
+	+Implimented edit mode for editor windows
+	+General code cleanup
+	+Naming more consistant between classes
+	+Moved some methods into CivGridUtility
+	+Made startup improvements in TileManager
+	+Small improvements
+	+Started work on small game demo
+Version 0.5.1f
+	+Added ability to resize texture atlas without starting 	over
+	+Resource/Improvement ground texture swapping is now 	optional
+	+Added ability to determine when to start world generation
+	+Basic code cleanup
+	+New hierarchy layout
+	+Added Save/Load functionality 	WorldManager.LoadAndGenerateNewMap()) / 	WorldManager.SaveMap()
+	+Minor bug fixes
+Version 0.5.2f
+	+Saves which texture was used to make the map more 	consistant when tiles have a texture pool.
+	+Tiles that have multiple possible textures now always 	return to their first picked defualt tile instead of 	selecting a new, possibily different, tile.
+Version 0.5.3f
+	+Fixes movement with wrapping enabled on a camera
+	+Tiles with features now work as desribed in 0.5.2f
+Version 0.5.5
+	+Complete code commentation
+	+Resource/Improvement/Tile generation speed up
+	+Resource and Improvement manager cleaned up once again
+Version 0.6
+	+Added delegate callbacks
+	+Added complete documentation
+	+Massive code cleanup
+	+Moved all example logic out of WorldManager
+	+Worked on hill and mountain generation
+Version 0.7
+	+Corrected misnaming of latitude
+	+Added latitude/longitudes
+	+Cached all coordinate formats
+	+New Terrain Manager Window
+	+Better Window performance
+	+Better GetHexFromXXXX() performance
+	+Mesh generation overhaul
+	+Neighbors logic
+	+Fixed offset coordinate conversions
+	+Flat hexagon's are heightmapped and 3D with blending
+	+Fixed oceans being set as shore incorrectly on map 	borders
+	+Implimented custom extension classes for Hex, and Chunk
+	+Hexagon borders
+	+Exposed noise settings
+	+Added LOD system, including:
+	0 - All flat
+	1 - Mountains and Hills with noise
+	2 - All tiles have noise
+	3 - High Poly Noise
+`	+Exposed internal LOD data, instead of loading it at 	runtime
+	+Fixed LOD 0, not having raised mountains
+	+Optimized FinePossibleChunks()
+	+Spread Borders work over a few frames
+	+Fixed Editor Bugs
+	+Fixed Tile referencing errors
+	

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder" version="2014.5.31.0" projectFile="C:\Users\Landon\Desktop\CivGridRepository\DocumentationBuilderFile.shfbproj" started="8/9/2014 7:27:51 PM">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Locating components in the following folder(s):
+   C:\Users\Landon\Desktop\CivGridRepository
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2014.5.31.0
+Copyright &#169; 2006-2014, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\Users\Landon\Desktop\CivGridRepository\TestProject\Temp\bin\Release\Assembly-CSharp.dll
+    Found assembly &#39;C:\Users\Landon\Desktop\CivGridRepository\TestProject\Temp\bin\Release\Assembly-CSharp.dll&#39;
+Source: C:\Users\Landon\Desktop\CivGridRepository\TestProject\Temp\bin\Release\CivGrid.xml
+
+References to include (excluding framework assemblies):
+    UnityEngine
+
+Copying XML comments files
+    C:\Users\Landon\Desktop\CivGridRepository\TestProject\Temp\bin\Release\CivGrid.xml -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\CivGrid.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00.1420
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0140
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Build started 8/9/2014 7:27:55 PM.
+Project &quot;C:\Users\Landon\Desktop\CivGridRepository\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2014.5.31.0)
+  Copyright c 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Loaded 1 assemblies for reflection and 2 dependency assemblies.
+  Wrote information on 2 namespaces, 32 types, and 198 members
+  Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
+  XslTransform (v2014.5.31.0)
+  Copyright c 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Done Building Project &quot;C:\Users\Landon\Desktop\CivGridRepository\Help\Working\GenerateRefInfo.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.08
+    Last step completed in 00:00:02.6863
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Build started 8/9/2014 7:27:58 PM.
+Project &quot;C:\Users\Landon\Desktop\CivGridRepository\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
+TransformManifest:
+  XslTransform (v2014.5.31.0)
+  Copyright c 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.nofilenames&quot;.
+  XslTransform (v2014.5.31.0)
+  Copyright c 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2014.5.31.0)
+  Copyright c 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Done Building Project &quot;C:\Users\Landon\Desktop\CivGridRepository\Help\Working\TransformManifest.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.30
+    Last step completed in 00:00:01.4896
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0791
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0110
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0040
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Build started 8/9/2014 7:27:59 PM.
+Project &quot;C:\Users\Landon\Desktop\CivGridRepository\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
+GenerateIntermediateTOC:
+  XslTransform (v2014.5.31.0)
+  Copyright c 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Done Building Project &quot;C:\Users\Landon\Desktop\CivGridRepository\Help\Working\GenerateIntermediateTOC.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.20
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00.3980
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.3910
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\Users\Landon\Desktop\CivGridRepository\Help\Working\sandcastle.config
+    Last step completed in 00:00:00.0430
+</buildStep>
+<buildStep step="BuildReferenceTopics">
+Building reference help topics...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Build started 8/9/2014 7:28:00 PM.
+Project &quot;C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj&quot; on node 1 (default targets).
+BuildReferenceTopics:
+  BuildAssembler (v2014.5.31.0)
+  Copyright c 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2014, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  Processing topics...
+BuildAssembler : warning : ShowMissingComponent: [N:CivGrid] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.CivGridCamera] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.CivGridCamera] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.CivGridCamera] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.CivGridCamera] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.CivGridCamera.GetCamera(System.Int32)] Unknown reference link target &#39;T:UnityEngine.Camera&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.CivGridFileUtility.LoadTexture(System.String)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.CivGridFileUtility.LoadTexture(System.String,System.String)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.CivGridFileUtility.SaveTexture(UnityEngine.Texture2D,System.String,System.Boolean)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.CivGridFileUtility.SaveTexture(UnityEngine.Texture2D,System.String,System.String,System.Boolean)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.CivGridUtility.GetSurrondingPixels(UnityEngine.Texture2D,System.Int32,System.Int32)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.ExtensionMethods.Add(System.Collections.Generic.List{CivGrid.ImprovementItem},CivGrid.Improvement,UnityEngine.Rect)] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.ExtensionMethods.Add(System.Collections.Generic.List{CivGrid.ResourceItem},CivGrid.Resource,UnityEngine.Rect)] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.ExtensionMethods.Add(System.Collections.Generic.List{CivGrid.TileItem},CivGrid.Tile,UnityEngine.Rect)] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.ExtensionMethods.TryGetValue(CivGrid.ImprovementItem[],CivGrid.Improvement,UnityEngine.Rect@)] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.ExtensionMethods.TryGetValue(CivGrid.ResourceItem[],CivGrid.Resource,UnityEngine.Rect@)] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.ExtensionMethods.TryGetValue(CivGrid.TileItem[],CivGrid.Tile,UnityEngine.Rect@)] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.HexChunk] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.HexChunk] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.HexChunk] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.HexChunk] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexChunk.chunkLocation] Unknown reference link target &#39;T:UnityEngine.Vector2&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexChunk.chunkSize] Unknown reference link target &#39;T:UnityEngine.Vector2&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexChunk.hexSize] Unknown reference link target &#39;T:UnityEngine.Vector3&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:CivGrid.HexInfo.AxialGridPosition] Unknown reference link target &#39;T:UnityEngine.Vector2&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:CivGrid.HexInfo.CubeGridPosition] Unknown reference link target &#39;T:UnityEngine.Vector3&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexInfo.currentRectLocation] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexInfo.defaultRectLocation] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexInfo.iObject] Unknown reference link target &#39;T:UnityEngine.GameObject&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexInfo.localMesh] Unknown reference link target &#39;T:UnityEngine.Mesh&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexInfo.localPosition] Unknown reference link target &#39;T:UnityEngine.Vector3&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexInfo.resourceLocations] Unknown reference link target &#39;T:UnityEngine.Vector3&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexInfo.rObject] Unknown reference link target &#39;T:UnityEngine.GameObject&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.HexInfo.worldPosition] Unknown reference link target &#39;T:UnityEngine.Vector3&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.Improvement.#ctor(System.String,UnityEngine.Mesh,UnityEngine.Texture2D,System.Boolean,CivGrid.HexRule)] Unknown reference link target &#39;T:UnityEngine.Mesh&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.Improvement.#ctor(System.String,UnityEngine.Mesh,UnityEngine.Texture2D,System.Boolean,CivGrid.HexRule)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.Improvement.meshTexture] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.Improvement.meshToSpawn] Unknown reference link target &#39;T:UnityEngine.Mesh&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.ImprovementItem.#ctor(CivGrid.Improvement,UnityEngine.Rect)] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:CivGrid.ImprovementItem.Value] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.ImprovementManager] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.ImprovementManager] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.ImprovementManager] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.ImprovementManager] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.NoiseGenerator.PerlinNoise(System.Int32,System.Int32,System.Single)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.NoiseGenerator.RandomOverlay(UnityEngine.Texture2D,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean)] Missing &lt;returns&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.NoiseGenerator.RandomOverlay(UnityEngine.Texture2D,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.NoiseGenerator.RandomOverlay(UnityEngine.Texture2D,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.NoiseGenerator.SmoothPerlinNoise(System.Int32,System.Int32,System.Single,System.Int32)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.Resource.#ctor(System.String,System.Single,System.Int32,UnityEngine.Mesh,UnityEngine.Texture2D,System.Boolean,CivGrid.HexRule)] Unknown reference link target &#39;T:UnityEngine.Mesh&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.Resource.#ctor(System.String,System.Single,System.Int32,UnityEngine.Mesh,UnityEngine.Texture2D,System.Boolean,CivGrid.HexRule)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.Resource.meshTexture] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.Resource.meshToSpawn] Unknown reference link target &#39;T:UnityEngine.Mesh&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.ResourceItem.#ctor(CivGrid.Resource,UnityEngine.Rect)] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:CivGrid.ResourceItem.Value] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.ResourceManager] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.ResourceManager] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.ResourceManager] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.ResourceManager] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.TextureAtlas.terrainAtlas] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.TexturePacker.AtlasTextures(UnityEngine.Texture2D[],System.Int32,UnityEngine.Rect[]@)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.TexturePacker.AtlasTextures(UnityEngine.Texture2D[],System.Int32,UnityEngine.Rect[]@)] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.TexturePacker.AtlasTextures(UnityEngine.Texture2D[],System.Int32,UnityEngine.Rect[]@)] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.TileItem.#ctor(CivGrid.Tile,UnityEngine.Rect)] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:CivGrid.TileItem.Value] Unknown reference link target &#39;T:UnityEngine.Rect&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.TileManager] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.TileManager] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.TileManager] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.TileManager] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.WorldManager] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.WorldManager] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.WorldManager] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.WorldManager] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.WorldManager.GetHexFromAxialPosition(UnityEngine.Vector2)] Unknown reference link target &#39;T:UnityEngine.Vector2&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.WorldManager.GetHexFromWorldPosition(UnityEngine.Vector3)] Unknown reference link target &#39;T:UnityEngine.Vector3&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:CivGrid.WorldManager.GetHexFromWorldPosition(UnityEngine.Vector3,CivGrid.HexChunk)] Unknown reference link target &#39;T:UnityEngine.Vector3&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.WorldManager.mapSize] Unknown reference link target &#39;T:UnityEngine.Vector2&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.WorldManager.mountainMap] Unknown reference link target &#39;T:UnityEngine.Texture2D&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.WorldManager.mousePos] Unknown reference link target &#39;T:UnityEngine.Vector2&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:CivGrid.SampleResources] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:CivGrid.SampleResources.GameManager] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.GameManager] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.GameManager] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.GameManager] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.GameManager] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CivGrid.SampleResources.GameManager.Barbarian] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:CivGrid.SampleResources.GameManager.Barbarian] Unknown reference link target &#39;T:UnityEngine.GameObject&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CivGrid.SampleResources.GameManager.nextTurn] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CivGrid.SampleResources.GameManager.worldEvent] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:CivGrid.SampleResources.Melee] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Melee] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Melee] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Melee] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Melee] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Melee.Attack(CivGrid.SampleResources.Melee)] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Melee.Attack(CivGrid.SampleResources.Melee)] Missing &lt;param name=&quot;unitToAttack&quot;/&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Melee.Attack(CivGrid.SampleResources.Range)] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Melee.Attack(CivGrid.SampleResources.Range)] Missing &lt;param name=&quot;unitToAttack&quot;/&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CivGrid.SampleResources.Melee.strength] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:CivGrid.SampleResources.NextTurn] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:CivGrid.SampleResources.Range] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Range] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Range] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Range] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Range] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CivGrid.SampleResources.Range.strength] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:CivGrid.SampleResources.SaveManager] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.SaveManager] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.SaveManager] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.SaveManager] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.SaveManager] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Unit] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Unit] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Unit] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:CivGrid.SampleResources.Unit] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.Attack(CivGrid.SampleResources.Melee)] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.Attack(CivGrid.SampleResources.Melee)] Missing &lt;param name=&quot;unitToAttack&quot;/&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.Attack(CivGrid.SampleResources.Range)] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.Attack(CivGrid.SampleResources.Range)] Missing &lt;param name=&quot;unitToAttack&quot;/&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CivGrid.SampleResources.Unit.currentLocation] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CivGrid.SampleResources.Unit.health] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.Move(CivGrid.HexInfo,CivGrid.HexInfo,System.Boolean)] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.Move(CivGrid.HexInfo,CivGrid.HexInfo,System.Boolean)] Missing &lt;param name=&quot;fromTile&quot;/&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.Move(CivGrid.HexInfo,CivGrid.HexInfo,System.Boolean)] Missing &lt;param name=&quot;toTile&quot;/&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.Move(CivGrid.HexInfo,CivGrid.HexInfo,System.Boolean)] Missing &lt;param name=&quot;quickMove&quot;/&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CivGrid.SampleResources.Unit.movesLeft] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.MovesToCompleteAction] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.MovesToCompleteAction] Missing &lt;returns&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CivGrid.SampleResources.Unit.selected] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CivGrid.SampleResources.Unit.unitMoves] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CivGrid.SampleResources.Unit.Update] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:CivGrid.SampleResources.WorldEvent] Missing &lt;summary&gt; documentation [C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj]
+  Processed 271 topic(s)
+  132 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
+Done Building Project &quot;C:\Users\Landon\Desktop\CivGridRepository\Help\Working\BuildReferenceTopics.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:27.25
+    Last step completed in 00:00:27.5557
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+
+Clearing any prior web output
+    Last step completed in 00:00:00.2893
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Sandcastle Help File Builder, version 2014.5.31.0
+Copyright c 2006-2014, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing website files in C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website
+Processed 271 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to C:\Users\Landon\Desktop\CivGridRepository\Help\Working\WebKI.xml
+Saving website table of contents to C:\Users\Landon\Desktop\CivGridRepository\Help\Working\WebTOC.xml
+    Last step completed in 00:00:00.7715
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help2.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-Help2.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\Search.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\TocClose.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\TocCollapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\TocExpanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\icons\TocOpen.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\scripts\branding-Website.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; C:\Users\Landon\Desktop\CivGridRepository\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
+    Last step completed in 00:00:01.4706
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0030
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+Adding lightweight search and TOC elements to each topic...
+</plugIn>    Last step completed in 00:00:03.1327
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 100 files
+Copied 200 files
+Copied 300 files
+Copied 400 files
+Copied 452 files for the website content
+    Last step completed in 00:00:00.5850
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.3090
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 08/09/2014 07:28 PM.  Total time: 00:00:43.4589
+
+</buildStep>
+</shfbBuild>

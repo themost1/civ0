@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="378fb4d9-fd46-4379-b166-fc2ea64e7716" Title="CivGrid" Url="html/0687d1d6-3df0-0337-5dc1-b65f2e843aab.htm">
+    <HelpTOCNode Id="13176aec-1997-47d5-a433-07912b30ec4e" Title="CivGridCamera Class" Url="html/58c51860-ec41-22fa-91d7-310e27060c38.htm">
+      <HelpTOCNode Title="CivGridCamera Constructor " Url="html/8bd3dc80-8c85-591f-6009-66415ad55516.htm" />
+      <HelpTOCNode Id="aef83a5b-35f4-4068-8998-117e207651dc" Title="CivGridCamera Fields" Url="html/14239d53-a425-83b4-b41d-ad25a2a0cf07.htm">
+        <HelpTOCNode Title="cameraAngle Field" Url="html/6387966f-3c82-c051-753e-c3c996490829.htm" />
+        <HelpTOCNode Title="cameraHeight Field" Url="html/17617d72-9c8a-02bd-df0a-4641b3b197d2.htm" />
+        <HelpTOCNode Title="cameraSpeed Field" Url="html/52c01ddd-8243-f1fa-905b-f3ea5692041f.htm" />
+        <HelpTOCNode Title="enableWrapping Field" Url="html/c4b5cbaf-ad49-14d7-dcb8-faafc4f5f907.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="02d032dd-962e-4dde-a905-593ed84d5015" Title="CivGridCamera Methods" Url="html/cde368ea-460e-cdab-37f2-2409e7c20405.htm">
+        <HelpTOCNode Title="GetCamera Method " Url="html/b1af049a-239e-2b50-e6a4-84cd763047aa.htm" />
+        <HelpTOCNode Title="SetupCameras Method " Url="html/1d314268-5e6b-c712-7095-a32b49000c16.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b5e42838-b7e3-41e4-8762-627872d4fb51" Title="CivGridFileUtility Class" Url="html/e85a769e-99d0-c49e-26a2-8f10f87813b2.htm">
+      <HelpTOCNode Id="cd271ca1-90db-4aee-8554-e5758df2e9d9" Title="CivGridFileUtility Methods" Url="html/0b3cc0b0-bd8f-dd54-617b-e49900fc8519.htm">
+        <HelpTOCNode Title="LoadTerrain Method " Url="html/dc5b0ad1-feaa-ddc4-28a4-4c14f0aaa7ba.htm" />
+        <HelpTOCNode Id="ba691308-37ea-4170-a4e9-53968e861fb7" Title="LoadTexture Method " Url="html/db1ec031-08ea-f83e-31e7-5d2b8f83c7ae.htm">
+          <HelpTOCNode Title="LoadTexture Method (String)" Url="html/51c90f85-c1cb-d434-7c10-d4ec900069b3.htm" />
+          <HelpTOCNode Title="LoadTexture Method (String, String)" Url="html/7f1ed588-9c88-44bc-4a16-28d86ebedf11.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SaveTerrain Method " Url="html/e61d6944-f414-1dc0-883b-428a4620ae0b.htm" />
+        <HelpTOCNode Id="f2e9ff02-276b-4512-985b-c1bcf93b051e" Title="SaveTexture Method " Url="html/e6365e27-3ab4-f023-42c3-ebea191ac820.htm">
+          <HelpTOCNode Title="SaveTexture Method (Texture2D, String, Boolean)" Url="html/62c9280c-6411-cb65-d3e5-aab74f937690.htm" />
+          <HelpTOCNode Title="SaveTexture Method (Byte[], String, String, Boolean)" Url="html/e65c8e2e-6794-1b1d-9ada-c3c33e97452f.htm" />
+          <HelpTOCNode Title="SaveTexture Method (Texture2D, String, String, Boolean)" Url="html/e251b757-a438-484b-b8d3-f5c01ce0c1a4.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4a5ceebf-2b8c-44de-9354-3e876c854394" Title="CivGridUtility Class" Url="html/549a04d9-ed6f-b8d0-35c1-20d8d7feb51b.htm">
+      <HelpTOCNode Id="09a79619-39bc-4536-9f12-cfbf514b7fb7" Title="CivGridUtility Methods" Url="html/4702fb4a-5f0e-15c8-712a-4ddd4b88169b.htm">
+        <HelpTOCNode Title="GetSurrondingPixels Method " Url="html/cbe5f46e-1c1b-8659-fbac-57ec205be240.htm" />
+        <HelpTOCNode Title="Resize2DArray(T) Method " Url="html/490ea20c-0648-af78-545d-b6841440af42.htm" />
+        <HelpTOCNode Id="7e973b58-e859-4554-9061-8f61551cbffa" Title="ToSingleArray Method " Url="html/92b35ddb-36f8-93c1-1494-98924572721e.htm">
+          <HelpTOCNode Title="ToSingleArray(T) Method (T[,])" Url="html/65412bab-5cb6-3aaa-0ed3-2125d91db4ab.htm" />
+          <HelpTOCNode Title="ToSingleArray(T) Method (T[,], T[])" Url="html/4ce7e4af-4e88-1f28-3b7b-9402ff68114a.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a2c7c77a-1fd9-4d70-b0bf-a0b40a395c05" Title="ExtensionMethods Class" Url="html/879398dd-be99-c795-dd72-cee30630a0e6.htm">
+      <HelpTOCNode Id="6ba8776e-52bc-4084-aa61-46e02623b0aa" Title="ExtensionMethods Methods" Url="html/70955992-2685-748e-5e00-3605dd054703.htm">
+        <HelpTOCNode Id="e505e27d-3a41-4181-9235-1a8f8aac0588" Title="Add Method " Url="html/260713b7-3165-638d-6118-acf12b8b0f79.htm">
+          <HelpTOCNode Title="Add Method (List(ImprovementItem), Improvement, Rect)" Url="html/e7e60236-1471-9cbf-6088-1e639995b6e6.htm" />
+          <HelpTOCNode Title="Add Method (List(ResourceItem), Resource, Rect)" Url="html/6d303388-306c-dbcd-1110-1bf161cbfe20.htm" />
+          <HelpTOCNode Title="Add Method (List(TileItem), Tile, Rect)" Url="html/f9577c9b-0ca8-202c-f2b5-e09b76a7c222.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="b2acde4d-0275-45a8-9422-1bf9d82c7458" Title="ContainsKey Method " Url="html/ced1df03-bc4a-27cc-7dcf-14a4fbb60779.htm">
+          <HelpTOCNode Title="ContainsKey Method (ImprovementItem[], Improvement)" Url="html/225581b1-46b8-4710-9bae-ead267b3c187.htm" />
+          <HelpTOCNode Title="ContainsKey Method (List(ImprovementItem), Improvement)" Url="html/eb01124f-a905-79be-a3f8-48048920da4e.htm" />
+          <HelpTOCNode Title="ContainsKey Method (ResourceItem[], Resource)" Url="html/91dd2478-a46c-82ba-2002-ee1459b8329c.htm" />
+          <HelpTOCNode Title="ContainsKey Method (List(ResourceItem), Resource)" Url="html/7199d605-f0c3-440d-35f8-565ab0ed85d0.htm" />
+          <HelpTOCNode Title="ContainsKey Method (TileItem[], Tile)" Url="html/a68ec031-2cd3-49a4-2f20-a0142577f4a2.htm" />
+          <HelpTOCNode Title="ContainsKey Method (List(TileItem), Tile)" Url="html/6e5d6f56-a6b3-74ad-0e3d-359fc733e21e.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ConvertToEnum(T) Method " Url="html/f8abd362-2c3a-5c92-74e7-8ff7ab892f3a.htm" />
+        <HelpTOCNode Id="e7f54908-cd7b-4936-86aa-2932f509a5a9" Title="TryGetValue Method " Url="html/87e5e744-1922-0afc-5ea7-407530f90f37.htm">
+          <HelpTOCNode Title="TryGetValue Method (ImprovementItem[], Improvement, Rect)" Url="html/4af22e0b-49be-3e9e-a84f-d9b5ca9b10bf.htm" />
+          <HelpTOCNode Title="TryGetValue Method (ResourceItem[], Resource, Rect)" Url="html/b88b3d29-b23f-99b9-ef11-fc206d8e9456.htm" />
+          <HelpTOCNode Title="TryGetValue Method (TileItem[], Tile, Rect)" Url="html/a9c95a33-b5ac-b3a2-f30f-a1d7bea4d141.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Feature Enumeration" Url="html/027018e8-a94f-b7bd-f61b-b1eb18118158.htm" />
+    <HelpTOCNode Id="73ccbc20-f9b0-4d98-8ffd-7db665fe2078" Title="HexChunk Class" Url="html/c726475b-b12b-7e91-4ece-2e3aa63803b8.htm">
+      <HelpTOCNode Title="HexChunk Constructor " Url="html/48d953a1-237a-c26f-9cf1-a83844b11880.htm" />
+      <HelpTOCNode Id="fa6f6e86-57b2-4626-aee1-17211461548e" Title="HexChunk Fields" Url="html/5b8a82a3-fdeb-a3f7-9612-5e30084b3f80.htm">
+        <HelpTOCNode Title="chunkLocation Field" Url="html/e5fc5432-0ce7-d2bd-f9be-9f0128a01da2.htm" />
+        <HelpTOCNode Title="chunkSize Field" Url="html/2be3defa-eeb8-52ab-9b07-5d9f7f8a1c9e.htm" />
+        <HelpTOCNode Title="hexArray Field" Url="html/49437ec7-683e-fb58-0379-1e86205d739c.htm" />
+        <HelpTOCNode Title="hexSize Field" Url="html/61950d05-c3e3-8cae-4ee8-db126d76d7e9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9970e46a-deef-44d2-b184-f3c814bee485" Title="HexChunk Methods" Url="html/95d26670-fb61-0cb1-e00d-b085c2ecf46d.htm">
+        <HelpTOCNode Title="AllocateHexArray Method " Url="html/2cfc28e4-56cc-a44b-3705-38c6bcceaacf.htm" />
+        <HelpTOCNode Title="GenerateChunk Method " Url="html/c2d77e4b-9cbf-e98b-22db-ea786eba57b0.htm" />
+        <HelpTOCNode Title="GenerateHexCollider Method " Url="html/6b39210a-c6ec-2b26-ee8c-3f07a6c2dbc0.htm" />
+        <HelpTOCNode Title="SetSize Method " Url="html/a7df0ec3-c56b-7bf1-3dbd-849c601bc4fd.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6fbfaf4d-c247-44a6-b4c1-3b0ba142e370" Title="HexInfo Class" Url="html/3871dce8-367b-2369-f57b-81624b38fb8a.htm">
+      <HelpTOCNode Title="HexInfo Constructor " Url="html/ce126f74-00e8-67c9-3f5f-896bffdb02ab.htm" />
+      <HelpTOCNode Id="fcf96f68-8c84-4dfa-95c1-1c7f7754fa33" Title="HexInfo Fields" Url="html/616469b0-2ad5-3fca-b066-1d980ec999f5.htm">
+        <HelpTOCNode Title="currentImprovement Field" Url="html/820f13fb-b03e-6e39-a8d6-348b856fe4c4.htm" />
+        <HelpTOCNode Title="currentRectLocation Field" Url="html/e15d6a67-7568-c2f1-2cc4-87a9f4b8fd61.htm" />
+        <HelpTOCNode Title="currentResource Field" Url="html/a59a12a2-cca4-99a8-caf3-ffaca596b42a.htm" />
+        <HelpTOCNode Title="defaultRectLocation Field" Url="html/f9e0f1f8-0a2b-40ff-c0c4-121b92a0718a.htm" />
+        <HelpTOCNode Title="iObject Field" Url="html/3b1fb820-647d-95c0-6abb-2c0b691ce132.htm" />
+        <HelpTOCNode Title="localMesh Field" Url="html/72ac0ab4-1359-8bfb-0079-04768cb5ab60.htm" />
+        <HelpTOCNode Title="localPosition Field" Url="html/355c5d94-cbff-9e1d-c200-688d7671859d.htm" />
+        <HelpTOCNode Title="parentChunk Field" Url="html/3d6b5db5-4fc9-bc40-f7aa-79ba1cd87148.htm" />
+        <HelpTOCNode Title="resourceLocations Field" Url="html/dbe4c2a5-00a4-4f56-8510-ef9d5a833db9.htm" />
+        <HelpTOCNode Title="rObject Field" Url="html/3b7437d0-a87c-a55c-04d8-332b2fd1eef0.htm" />
+        <HelpTOCNode Title="terrainFeature Field" Url="html/e427d2d7-9195-952e-c39a-aaeed2f12942.htm" />
+        <HelpTOCNode Title="terrainType Field" Url="html/127c8880-916a-7853-47e2-e4da531f2f3a.htm" />
+        <HelpTOCNode Title="worldPosition Field" Url="html/a8029f49-e7c6-d7dc-4717-826f38a716a0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="baa3d039-22fe-41f7-9bf6-ff276eb363cf" Title="HexInfo Methods" Url="html/2b4a0725-61be-4c9b-aca7-fd544871bee9.htm">
+        <HelpTOCNode Title="ApplyChanges Method " Url="html/428fb957-af95-7f7d-6fd0-e99ec67541df.htm" />
+        <HelpTOCNode Title="ChangeTextureToImprovement Method " Url="html/09429c86-a8f6-1a07-f4e4-08179b1854ca.htm" />
+        <HelpTOCNode Title="ChangeTextureToNormalTile Method " Url="html/31951235-43e3-7041-ca0c-0338a0bca979.htm" />
+        <HelpTOCNode Title="ChangeTextureToResource Method " Url="html/f18d65b0-88e6-4f54-4f18-5a887fbb6f1c.htm" />
+        <HelpTOCNode Title="MeshSetup Method " Url="html/0aab6fa0-82cd-f761-e944-0b04364bb8cb.htm" />
+        <HelpTOCNode Title="Start Method " Url="html/ec10269f-d2ca-b4ac-5583-6ae1c513dec9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="409af6d9-bb14-4307-93fb-3b3331ffe982" Title="HexInfo Properties" Url="html/b7259a15-2ca7-5d73-8efb-e1c7708761fd.htm">
+        <HelpTOCNode Title="AxialGridPosition Property " Url="html/df881e3f-2a52-654e-7087-b5a4fd08c8b2.htm" />
+        <HelpTOCNode Title="CubeGridPosition Property " Url="html/f6c01581-0e97-b45d-e34d-bcf875ef8cb3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="60f1665d-3145-4cc3-8bb6-5cd5b9796e01" Title="HexRule Class" Url="html/55bdecb4-016e-397a-f4b6-483909a71004.htm">
+      <HelpTOCNode Title="HexRule Constructor " Url="html/9ec7ac5b-bf4b-ebac-ce8d-8e85225687b0.htm" />
+      <HelpTOCNode Id="dffdd076-cce3-4de8-9fe4-becdd64df7cb" Title="HexRule Fields" Url="html/b419caf5-182f-1c06-5d19-ecd1aa6a01ae.htm">
+        <HelpTOCNode Title="possibleFeatures Field" Url="html/d0f279ef-605b-9914-6313-8dde0366d583.htm" />
+        <HelpTOCNode Title="possibleTiles Field" Url="html/8c21d202-b698-9486-a374-bbd37897fe16.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a6c1e9f4-d2e9-4b75-9315-2dc7fcf2deae" Title="Improvement Class" Url="html/7d53b3d4-e854-18df-7454-171f660dad70.htm">
+      <HelpTOCNode Id="fa8dec71-a3cb-4b75-94a5-92f7e4e5314f" Title="Improvement Constructor " Url="html/00676bbf-f472-a6ac-f858-0f79dd6de72d.htm">
+        <HelpTOCNode Title="Improvement Constructor " Url="html/9bdfa8a7-a90e-ee10-005d-aae7c0c922f6.htm" />
+        <HelpTOCNode Title="Improvement Constructor (String, Mesh, Texture2D, Boolean, HexRule)" Url="html/cc8bf4bb-923f-e125-dd44-d30d8a7e9334.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="606448d3-c918-4830-aedf-0bf8f567b822" Title="Improvement Fields" Url="html/4e8d3f81-728c-11fc-b1f9-c719636d3d08.htm">
+        <HelpTOCNode Title="meshTexture Field" Url="html/08cb0854-dc32-5372-592c-0d4dada7055c.htm" />
+        <HelpTOCNode Title="meshToSpawn Field" Url="html/17883f9f-1589-d38b-4542-fdc0e7786677.htm" />
+        <HelpTOCNode Title="name Field" Url="html/51ac6b25-4f65-861e-0541-aefedbc37bc4.htm" />
+        <HelpTOCNode Title="replaceGroundTexture Field" Url="html/9c6c9411-3b7f-8800-3228-b84813467c80.htm" />
+        <HelpTOCNode Title="rule Field" Url="html/31a38430-eb4c-f2d6-3d45-a95dfcd398ec.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5e633df2-f9dd-40f7-a2b1-f57f79de27e7" Title="ImprovementItem Class" Url="html/a365ea14-ac96-1b1c-016d-39a4747b5b09.htm">
+      <HelpTOCNode Title="ImprovementItem Constructor " Url="html/c6b5373b-78d4-590e-623a-3772122e479b.htm" />
+      <HelpTOCNode Id="032467cc-5150-49e7-9ee6-421f5241cc8a" Title="ImprovementItem Properties" Url="html/3a65eb6d-3bce-e6c0-ff56-70028c52eb89.htm">
+        <HelpTOCNode Title="Key Property " Url="html/d194f3c3-3170-72fe-5ce0-cce9ca08ee5c.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/95518d13-f3b2-0706-d63b-fe35dd1841c5.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="22975011-6873-4152-9151-43b97cf31391" Title="ImprovementManager Class" Url="html/7cf1e876-1bf0-3710-0017-194f70114cac.htm">
+      <HelpTOCNode Title="ImprovementManager Constructor " Url="html/c24edf99-e90a-82cf-fc96-268fa22801dd.htm" />
+      <HelpTOCNode Id="2919ca84-8e27-4f5b-86a5-00de8e25ba3c" Title="ImprovementManager Fields" Url="html/93e3cd8f-6ce6-d929-984a-e76dcf2d7547.htm">
+        <HelpTOCNode Title="improvementNames Field" Url="html/5e0e5a9f-dda3-839c-0f74-964f06fa15b4.htm" />
+        <HelpTOCNode Title="improvements Field" Url="html/3323773b-1525-f704-8ecc-8716885cd8a8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ea0e37d2-f288-4021-8f38-08297113a853" Title="ImprovementManager Methods" Url="html/ac2e59d4-7dc1-d154-2325-f6f5a27a29e2.htm">
+        <HelpTOCNode Title="AddImprovement Method " Url="html/e5e9ba38-3a3f-6f11-b649-4b30236eb0c2.htm" />
+        <HelpTOCNode Title="AddImprovementAtIndex Method " Url="html/9b39330a-1de7-3b0f-51e4-ce3a30ae6016.htm" />
+        <HelpTOCNode Title="DeleteImprovement Method " Url="html/95305034-2903-4f8c-40cd-d6c8db8ad609.htm" />
+        <HelpTOCNode Title="RemoveImprovementFromTile Method " Url="html/ffa73a4c-e359-7b85-4a94-bd22b9b38a71.htm" />
+        <HelpTOCNode Title="SetUp Method " Url="html/72033cba-a978-584e-8155-198a7a344f32.htm" />
+        <HelpTOCNode Id="c7503c0e-ecfa-4c48-8991-916395cd4288" Title="TestedAddImprovementToTile Method " Url="html/a435aa23-ae4b-542e-39ca-583529a19515.htm">
+          <HelpTOCNode Title="TestedAddImprovementToTile Method (HexInfo, Improvement)" Url="html/ad18b553-bb3b-a7f1-6d2c-2e01c4147b5b.htm" />
+          <HelpTOCNode Title="TestedAddImprovementToTile Method (HexInfo, Int32)" Url="html/1ba8aaee-8af3-f108-7480-8379a8b43aa3.htm" />
+          <HelpTOCNode Title="TestedAddImprovementToTile Method (HexInfo, String)" Url="html/96494267-df58-7881-225f-6d666c7603ee.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="TryGetImprovement Method " Url="html/20c28ec7-41cb-5c00-b0ac-5d6f7fe215f0.htm" />
+        <HelpTOCNode Title="UpdateImprovementNames Method " Url="html/a61cd469-28db-89b9-4ae6-b9770ba3fbde.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6d8e8613-d927-404e-9e89-5d8af72a0f1e" Title="NoiseGenerator Class" Url="html/beb90bd9-4ff1-84da-0b0e-f1ddbb845760.htm">
+      <HelpTOCNode Id="a0c8996d-b710-4570-92a5-66e5fb46948c" Title="NoiseGenerator Methods" Url="html/8273bd20-ee43-2e2a-9015-08c4d094aee5.htm">
+        <HelpTOCNode Title="PerlinNoise Method " Url="html/af3ad95a-b7b5-4dba-6b26-27694e28d1cb.htm" />
+        <HelpTOCNode Title="RandomOverlay Method " Url="html/5b6de4cd-cfc5-34f8-cb82-31f0f93d110d.htm" />
+        <HelpTOCNode Title="SmoothPerlinNoise Method " Url="html/0e832ce6-d6b8-f4c9-d458-4c103d803b73.htm" />
+        <HelpTOCNode Title="StabalizeFloat Method " Url="html/10d4ba2f-42b0-63ed-d5a1-f4959a329311.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="57a2e246-2db0-47b9-9f3d-7232e1971ec3" Title="Resource Class" Url="html/0dade958-9a63-81b9-5bfc-db2d3ead295d.htm">
+      <HelpTOCNode Title="Resource Constructor " Url="html/7cdf8d51-8b49-5987-e959-14654d582bc2.htm" />
+      <HelpTOCNode Id="327859a7-e5b9-4a7a-b2d2-1c1fc07ddc8f" Title="Resource Fields" Url="html/550dc837-99ff-b1d3-e27b-c65ce833e6b9.htm">
+        <HelpTOCNode Title="meshSpawnAmount Field" Url="html/d5b7b039-18e6-0e40-af9a-8fea8c98230b.htm" />
+        <HelpTOCNode Title="meshTexture Field" Url="html/a1797767-63b2-eb4f-d081-f1e367c83e30.htm" />
+        <HelpTOCNode Title="meshToSpawn Field" Url="html/12a753ca-a67f-21c7-475b-775f5a94117c.htm" />
+        <HelpTOCNode Title="name Field" Url="html/2e29b192-1be9-777d-e369-fb0ca58c2117.htm" />
+        <HelpTOCNode Title="rarity Field" Url="html/0d199902-6b47-e160-6b15-0519eebd2513.htm" />
+        <HelpTOCNode Title="replaceGroundTexture Field" Url="html/88314ebf-9ebe-df0a-ff26-ece05fd1c539.htm" />
+        <HelpTOCNode Title="rule Field" Url="html/6674bd80-7e18-3a42-0b30-32dd52aeece7.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f4f444d7-c0d4-4d96-ae01-9c0b3cc62bdf" Title="ResourceItem Class" Url="html/3b35f08b-6452-a4fd-202b-c0a8de89dad7.htm">
+      <HelpTOCNode Title="ResourceItem Constructor " Url="html/8bdc8260-b6b9-1417-8ed9-4441c301ff3b.htm" />
+      <HelpTOCNode Id="a5607b73-c57c-405d-8ae6-48af46901917" Title="ResourceItem Properties" Url="html/5a0b412e-d8a5-6190-6710-4303094bd400.htm">
+        <HelpTOCNode Title="Key Property " Url="html/58146675-40c7-be65-ba11-4585d537c03a.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/2b56589f-556d-11bc-f0a9-47262a7a88e0.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6c0f7157-6d85-421d-a954-11a8f47b905d" Title="ResourceManager Class" Url="html/21b139bd-0171-9f97-7f8a-ae3fae661092.htm">
+      <HelpTOCNode Title="ResourceManager Constructor " Url="html/c3760d54-7dd8-4813-0778-a735693d3113.htm" />
+      <HelpTOCNode Id="af764870-40c0-4693-9aae-144e44ec2623" Title="ResourceManager Fields" Url="html/1c69ac59-d2de-e9d3-9223-f3a98404d332.htm">
+        <HelpTOCNode Title="resourceNames Field" Url="html/a3ee42df-3d9e-e16c-659d-bc9c53bc33b6.htm" />
+        <HelpTOCNode Title="resources Field" Url="html/bf0b3eeb-dab6-cdeb-9784-280377a0251d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="519a77a4-99d7-4c27-b53b-931df8580c06" Title="ResourceManager Methods" Url="html/12c6f78f-d1c2-cfc9-54a6-f77b9fa8f57b.htm">
+        <HelpTOCNode Title="AddResource Method " Url="html/56e656ef-915b-143a-9ffe-269991b0f08d.htm" />
+        <HelpTOCNode Title="AddResourceAtIndex Method " Url="html/09382e63-76df-2513-12a6-9e6d86bb5f07.htm" />
+        <HelpTOCNode Title="CheckForResource Method " Url="html/21c385d4-13c9-95e9-3cc8-77257932abbc.htm" />
+        <HelpTOCNode Title="DeleteResource Method " Url="html/f87daef2-4e5a-9f57-6356-f829046cc785.htm" />
+        <HelpTOCNode Title="SpawnResource Method " Url="html/dfdc5ca4-4969-09ea-33a9-c2011fa1cdc6.htm" />
+        <HelpTOCNode Title="TryGetResource Method " Url="html/e55e3cc8-08c2-085f-2732-ddbffeae3e7c.htm" />
+        <HelpTOCNode Title="UpdateResourceNames Method " Url="html/3443f58c-dda4-2e93-b9d4-b9c407353bb0.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3fc32af2-e6fc-4099-9137-03d4fc13ff97" Title="RuleTest Class" Url="html/ffbf06e9-b880-d951-87da-097fc7824c41.htm">
+      <HelpTOCNode Id="c0af17ef-589f-42fa-97b8-3fd5b9b6af2b" Title="RuleTest Methods" Url="html/d4d2f655-dd84-42e0-171b-b36caaed93b8.htm">
+        <HelpTOCNode Title="Test Method " Url="html/86024130-9643-e5e0-327a-90b36ef5743f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0e0a8a2d-d685-47f9-a08e-dad6b40de3ee" Title="TextureAtlas Class" Url="html/1f09d4da-a822-c2bf-b976-ba852f474ccb.htm">
+      <HelpTOCNode Title="TextureAtlas Constructor " Url="html/259bdbf0-5677-1c52-fc67-89a1e61f0e46.htm" />
+      <HelpTOCNode Id="c6cef3f3-08de-4b04-a4f9-d9d6035a0af9" Title="TextureAtlas Fields" Url="html/837546a2-8c84-040c-65e4-2c50bae8b19f.htm">
+        <HelpTOCNode Title="improvementLocations Field" Url="html/04455ffe-837e-5a2a-389d-cb8eafb0ab6b.htm" />
+        <HelpTOCNode Title="resourceLocations Field" Url="html/0f91f9a9-a16b-f0e6-a9cd-abd6df0d9f28.htm" />
+        <HelpTOCNode Title="terrainAtlas Field" Url="html/6292d803-6180-2c04-4461-440cbf90cd74.htm" />
+        <HelpTOCNode Title="tileLocations Field" Url="html/203c9d60-e90a-8b2a-b817-37a86f54b10f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3fee7195-bf19-4915-a923-4d8794b61f68" Title="TexturePacker Class" Url="html/45d95ac6-e3e7-db84-f141-53e9d700c1c1.htm">
+      <HelpTOCNode Id="f3914b5d-7ebe-4f17-b61c-a5781d9e8663" Title="TexturePacker Methods" Url="html/43707187-a29c-74fa-2feb-6fbd6ab6a23c.htm">
+        <HelpTOCNode Title="AtlasTextures Method " Url="html/c90073b9-b179-e2d4-5393-864396e55358.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d71fa493-9dd1-4efb-84b6-1c164bc2af47" Title="Tile Class" Url="html/4776e793-9ae8-9bb7-f7bd-32a4b50f3c05.htm">
+      <HelpTOCNode Id="ada5d160-6cf3-4467-a5b3-946c8d3d2d7c" Title="Tile Constructor " Url="html/342fb291-758a-2745-fff1-94f3023815c1.htm">
+        <HelpTOCNode Title="Tile Constructor (String, Single, Single)" Url="html/eb3b533c-9b69-9dc8-15cd-81b1a5aaa96b.htm" />
+        <HelpTOCNode Title="Tile Constructor (String, Boolean, Boolean, Boolean)" Url="html/599be444-68be-9463-29a2-6ee43e21bd26.htm" />
+        <HelpTOCNode Title="Tile Constructor (String, Boolean, Boolean, Boolean, Single, Single)" Url="html/64add042-acb2-5e1c-4b52-ac5a50fabb51.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="299f8122-eff0-4c5a-befc-946dd3f9d04a" Title="Tile Fields" Url="html/f03694cd-f671-e5f3-d97b-a72e7903ccb0.htm">
+        <HelpTOCNode Title="bottomLat Field" Url="html/c09f8d5b-9551-ebdb-ec86-5050d78eb074.htm" />
+        <HelpTOCNode Title="isMountain Field" Url="html/10d24e4a-bbf5-a04c-12b8-11443a404030.htm" />
+        <HelpTOCNode Title="isOcean Field" Url="html/ba721422-bc86-aa59-60af-b36c025c39b9.htm" />
+        <HelpTOCNode Title="isShore Field" Url="html/c2ce6c4e-e79a-5ce1-19de-34f28cb96211.htm" />
+        <HelpTOCNode Title="name Field" Url="html/aaafbbbc-e316-4d52-78aa-f2f5e6dcb759.htm" />
+        <HelpTOCNode Title="topLat Field" Url="html/d70dba02-4e5b-885f-0ec4-b4bcfb995951.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4dc4cb99-1447-4e4d-9cfc-c7ef5f821e20" Title="TileItem Class" Url="html/ddb9c912-2d11-e9eb-6194-a6e1dd8714e6.htm">
+      <HelpTOCNode Title="TileItem Constructor " Url="html/1e403cd8-91eb-16f7-c50f-9aeb6f352e9e.htm" />
+      <HelpTOCNode Id="5f60f2d2-6e95-4532-9702-a0f9f872a711" Title="TileItem Properties" Url="html/c9015d68-47c5-4f46-3ac7-2c4e4bb67c56.htm">
+        <HelpTOCNode Title="Key Property " Url="html/74866b8d-4467-6513-276b-47351a851c50.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/a0a981bf-0a52-cb54-cd92-9a6f37939b68.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6d2384e3-8b43-4198-87dd-4d820f1cd01f" Title="TileManager Class" Url="html/eea02ba7-b487-e686-1a64-b2ed2f829abc.htm">
+      <HelpTOCNode Title="TileManager Constructor " Url="html/27b73617-57c3-658e-b7bd-b35bc7805798.htm" />
+      <HelpTOCNode Id="0af4123f-7b7f-4fa1-be8d-25705b35eeea" Title="TileManager Fields" Url="html/8077cca3-d6b0-0f55-be35-9f81b169fa4c.htm">
+        <HelpTOCNode Title="tileNames Field" Url="html/82e9d943-4837-3a8f-5f9c-a6f203b77394.htm" />
+        <HelpTOCNode Title="tiles Field" Url="html/1b4f0e06-15c4-f047-727f-252e6885367e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3bfae7e5-c987-4238-a9c1-42e095d12848" Title="TileManager Methods" Url="html/3872bb5e-d353-8c56-38d7-90ff7a6babba.htm">
+        <HelpTOCNode Title="AddTile Method " Url="html/9cb90085-eae2-1972-614b-f8d7a08d7e63.htm" />
+        <HelpTOCNode Title="DeleteTile Method " Url="html/0296afb8-e03b-1f67-e625-29fcda285398.htm" />
+        <HelpTOCNode Title="GetTileFromLattitude Method " Url="html/d46ac36b-0198-5816-d096-098675288f6e.htm" />
+        <HelpTOCNode Title="TryGetMountain Method " Url="html/218197ad-6e45-1f55-6eea-e3d4513a069c.htm" />
+        <HelpTOCNode Title="TryGetOcean Method " Url="html/3fa7ad9d-d995-2150-9039-8325767ba623.htm" />
+        <HelpTOCNode Title="TryGetShore Method " Url="html/3872e249-12ff-ba85-60b6-8e971e3f6a7f.htm" />
+        <HelpTOCNode Title="TryGetTile Method " Url="html/9a844175-2a1d-d6e9-7615-764497da6b69.htm" />
+        <HelpTOCNode Title="UpdateTileNames Method " Url="html/bc5830ae-4211-06a2-c5e6-d9df7fc59dc9.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="06c980d4-d6be-4ebb-9116-2cb123fcdeb1" Title="WorldManager Class" Url="html/bb9cafb6-fdf5-c85f-e3b8-90b40ebd64e9.htm">
+      <HelpTOCNode Title="WorldManager Constructor " Url="html/aa9d1f48-eb87-eb07-e6b2-4ec832945bd7.htm" />
+      <HelpTOCNode Id="23218c73-6a55-409d-9874-3e32f6d2dde5" Title="WorldManager Fields" Url="html/359b2625-3625-eb7f-9424-582c86447aa3.htm">
+        <HelpTOCNode Title="chunkSize Field" Url="html/28cee6fa-1095-2b74-7faa-31e5ff6bf2b9.htm" />
+        <HelpTOCNode Title="generateOnStart Field" Url="html/62773cd0-c0ff-63af-f5e6-eb06381b79a7.htm" />
+        <HelpTOCNode Title="hexRadiusSize Field" Url="html/237a3962-f799-6fc7-e9ba-7525f52946c9.htm" />
+        <HelpTOCNode Title="mapSize Field" Url="html/245547ff-f4f7-f1ad-7d95-1f424e592189.htm" />
+        <HelpTOCNode Title="mountainMap Field" Url="html/19632389-025c-8396-7941-da6809d2d9b1.htm" />
+        <HelpTOCNode Title="mountainScaleY Field" Url="html/6629a09d-1403-7945-459b-946b7a9a392f.htm" />
+        <HelpTOCNode Title="mousePos Field" Url="html/7f025ed5-4e64-76ec-984b-95faeee0fd89.htm" />
+        <HelpTOCNode Title="noiseScale Field" Url="html/33ac0d4f-3ebe-80eb-5720-830ee287042d.htm" />
+        <HelpTOCNode Title="onHexClick Field" Url="html/5cebb919-4630-7ad0-ce3e-3bca865a7ba0.htm" />
+        <HelpTOCNode Title="onMouseOverHex Field" Url="html/adb554a8-37d2-bf03-ddf7-41a362f1a941.htm" />
+        <HelpTOCNode Title="textureAtlas Field" Url="html/d6f96db8-170e-7645-5e7d-fafa5fb99146.htm" />
+        <HelpTOCNode Title="useCivGridCamera Field" Url="html/b41c1200-f258-02db-7510-7fb5d9299e53.htm" />
+        <HelpTOCNode Title="useWorldTypeValues Field" Url="html/d2c64c09-661c-3b3d-b639-9e5ed5463ba2.htm" />
+        <HelpTOCNode Title="worldType Field" Url="html/5f752943-6b1c-d6c0-a83d-c9fedbdf3776.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ff31bda4-244e-45a9-b258-74abfa6c4c61" Title="WorldManager Methods" Url="html/583b8f50-833c-2b44-5ee4-2a251116f2ef.htm">
+        <HelpTOCNode Id="b658ba33-00b7-44d6-be77-823064eb38a6" Title="GenerateNewMap Method " Url="html/1013f2cc-2ae2-6cb6-c58e-feccd270a6f1.htm">
+          <HelpTOCNode Title="GenerateNewMap Method " Url="html/914af627-89b9-9f5e-aa95-07af4f353e28.htm" />
+          <HelpTOCNode Title="GenerateNewMap Method (Boolean)" Url="html/e4c4e8be-d5f2-3ac5-f961-3663cc6c92cf.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHexFromAxialPosition Method " Url="html/d9a54b11-0dbe-8226-ca1b-47c9fec76c47.htm" />
+        <HelpTOCNode Title="GetHexFromMouse Method " Url="html/e2d2cd05-10e7-4030-b695-a17d5ce80cc3.htm" />
+        <HelpTOCNode Id="05fcb8c8-a3ce-47c3-8feb-71c7a459ca67" Title="GetHexFromWorldPosition Method " Url="html/bef62273-8166-7657-487b-8df93c65fb00.htm">
+          <HelpTOCNode Title="GetHexFromWorldPosition Method (Vector3)" Url="html/3a63c1dd-15e6-40f9-8073-a84e6d6fe298.htm" />
+          <HelpTOCNode Title="GetHexFromWorldPosition Method (Vector3, HexChunk)" Url="html/89b51a42-80c1-cbc9-6aae-bec859192fbf.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="LoadAndGenerateMap Method " Url="html/ed15d2a8-cca6-7153-21fb-6d1463e4cad3.htm" />
+        <HelpTOCNode Title="RegenerateNewMap Method " Url="html/26d58f9d-eb74-8acd-19e6-8cc773e1bca1.htm" />
+        <HelpTOCNode Title="SaveMap Method " Url="html/1060355e-8f8a-5360-3e25-e76207808025.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="WorldManager.OnHexClick Delegate" Url="html/3515bd74-0784-6abf-829b-51d7dbbae60f.htm" />
+    <HelpTOCNode Title="WorldManager.OnMouseOverHex Delegate" Url="html/eb2399bc-91ad-7531-4ff2-c96ee7615919.htm" />
+    <HelpTOCNode Title="WorldType Enumeration" Url="html/5b2dc03f-ed13-aadd-fa91-77c2d3562f76.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="63f86c22-61f9-4a20-8899-f8ca1173c924" Title="CivGrid.SampleResources" Url="html/86f61532-1cf6-014e-d8d2-cbc41f6813c5.htm">
+    <HelpTOCNode Id="db65913a-02c3-4965-b64a-c4772b5e85fd" Title="GameManager Class" Url="html/7b7215d5-0ce5-c95b-8f9c-3e643e6006df.htm">
+      <HelpTOCNode Title="GameManager Constructor " Url="html/fb46e672-23b3-5ddd-8374-1427c707c3ff.htm" />
+      <HelpTOCNode Id="5a7a2875-9804-47cc-adab-4fdf9b8a6470" Title="GameManager Fields" Url="html/e9c727a5-2038-d0ae-3776-579f230c9b96.htm">
+        <HelpTOCNode Title="Barbarian Field" Url="html/94bf1ff8-fb6a-4497-b0b2-1a60312d0474.htm" />
+        <HelpTOCNode Title="nextTurn Field" Url="html/444c2d5d-ec60-58cd-969a-e6eae6a4ecf4.htm" />
+        <HelpTOCNode Title="worldEvent Field" Url="html/3c1e2772-b488-629c-e50f-090e0a5c612a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6effad2d-2e69-4c16-91e8-1c2b8276b495" Title="Melee Class" Url="html/195cd847-bc99-4ec2-2976-950844601720.htm">
+      <HelpTOCNode Title="Melee Constructor " Url="html/c7d1d511-5187-7355-c33c-7e20e42d969a.htm" />
+      <HelpTOCNode Id="edb4d0a4-d083-4ed6-99ec-b01f2c94d1dc" Title="Melee Fields" Url="html/3b85b14a-0ad3-063d-189c-c4b1e3fbc3af.htm">
+        <HelpTOCNode Title="strength Field" Url="html/7a65647a-06bf-366b-bb27-a0aa290bd9af.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5a60c908-f7a2-4ad8-bb1f-8f187aca50ce" Title="Melee Methods" Url="html/aeea280e-d9c4-b7d5-0f30-78a7cf99b3f7.htm">
+        <HelpTOCNode Id="b9503e5e-b902-4478-b233-fd6be7ebe08d" Title="Attack Method " Url="html/6f2fd0bc-5852-99d9-63ee-88eea3514f2a.htm">
+          <HelpTOCNode Title="Attack Method (Melee)" Url="html/e646ba44-790a-cf95-6ea3-113ec2ccb2c8.htm" />
+          <HelpTOCNode Title="Attack Method (Range)" Url="html/8f47a9ce-aead-1212-b5c5-729a8afe2d45.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="NextTurn Delegate" Url="html/d5c27968-e79f-2adb-02ff-376f0988a462.htm" />
+    <HelpTOCNode Id="95718991-2f67-4d9e-a72b-77a198971119" Title="Range Class" Url="html/62d4aa36-826a-da3b-be4d-133ae40ebb94.htm">
+      <HelpTOCNode Title="Range Constructor " Url="html/5c0f6644-245a-1da4-28c5-80d8d022b458.htm" />
+      <HelpTOCNode Id="c17ab354-983f-48db-8560-aeab8fe29ce6" Title="Range Fields" Url="html/3663c280-d490-81f3-d29f-c8ec0bdec519.htm">
+        <HelpTOCNode Title="strength Field" Url="html/f0ebbd03-9060-628e-2381-69c9d94efb97.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3384416a-2d09-4e2f-bdc6-570f372a426f" Title="SaveManager Class" Url="html/16fe6f00-2342-4ec8-305f-1abd8a740cec.htm">
+      <HelpTOCNode Title="SaveManager Constructor " Url="html/78acff3b-0b29-4bc0-5724-14005d70bace.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="6ed34e98-26ef-4858-a7e3-60a910179bed" Title="Unit Class" Url="html/3118dfc9-af66-bcee-44ed-1b413889650d.htm">
+      <HelpTOCNode Title="Unit Constructor " Url="html/8820bff4-c80c-52ba-eb0a-d5bfeda15b0c.htm" />
+      <HelpTOCNode Id="dfcd40ec-1087-4ecd-8ee7-768ff52e12c1" Title="Unit Fields" Url="html/171cd7b0-e751-a4d8-571c-0ddb32385b03.htm">
+        <HelpTOCNode Title="currentLocation Field" Url="html/ee2100ad-f5c0-2d98-f91b-7c22164a41f0.htm" />
+        <HelpTOCNode Title="health Field" Url="html/d4a3fc7c-4d09-c8eb-e379-8e4eee3481c6.htm" />
+        <HelpTOCNode Title="movesLeft Field" Url="html/3d3bac87-f6a0-0a27-d2e5-828025acb2a5.htm" />
+        <HelpTOCNode Title="selected Field" Url="html/01fea4f1-fb56-690c-a7c3-6cf4939ad9a3.htm" />
+        <HelpTOCNode Title="unitMoves Field" Url="html/a9716e0d-ee18-89cc-6d9a-e7bfd0e8fc07.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c72e4b09-e875-4503-af6a-08a920a2ce8a" Title="Unit Methods" Url="html/79676d45-d718-e698-d4c1-dcd8cac6d912.htm">
+        <HelpTOCNode Id="8855d2e6-8816-421d-b7e5-af5d411008f2" Title="Attack Method " Url="html/61885d83-0477-a749-77fc-062b66791b47.htm">
+          <HelpTOCNode Title="Attack Method (Melee)" Url="html/5a89cdbc-5833-0d54-8659-c110e671c56a.htm" />
+          <HelpTOCNode Title="Attack Method (Range)" Url="html/3147eb32-59d5-9414-f821-0ac374903b9b.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Move Method " Url="html/7d49e3da-6356-47e2-9212-183360a7bd59.htm" />
+        <HelpTOCNode Title="MovesToCompleteAction Method " Url="html/2ccf399c-6823-d804-56ab-a9b345b30c4b.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/95590b37-64f3-2cda-ad45-8be605473f7c.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="WorldEvent Delegate" Url="html/6c82f1e2-45e8-dbfa-1be0-7ddacf9f0552.htm" />
+  </HelpTOCNode>
+</HelpTOC>
