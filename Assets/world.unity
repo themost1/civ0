@@ -87,6 +87,48 @@ NavMeshSettings:
     cellSize: .166666657
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &285039275
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 410304, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.89584064
+      objectReference: {fileID: 0}
+    - target: {fileID: 410304, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 8.76774597
+      objectReference: {fileID: 0}
+    - target: {fileID: 410304, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.80290031
+      objectReference: {fileID: 0}
+    - target: {fileID: 410304, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410304, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410304, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410304, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 410304, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1096191653
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +188,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1606365461
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +237,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &1998527585
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +338,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!114 &1998527592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tank: {fileID: 112792, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
+  dankMaterial: {fileID: 2100000, guid: a3c85462b91384152b713b231a37ad6f, type: 2}
   vNum: 0
 --- !u!114 &1998527593
 MonoBehaviour:

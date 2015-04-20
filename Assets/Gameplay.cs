@@ -4,6 +4,7 @@ using System.Collections;
 public class Gameplay : MonoBehaviour {
 	public static float cooldown=0, currentPlayer=1, turn;
 	public GameObject tank;
+	public Material dankMaterial;
 	public static GameObject selected;
 	public int vNum;
 	public ArrayList vehicles = new ArrayList();
@@ -20,23 +21,33 @@ public class Gameplay : MonoBehaviour {
 			currentPlayer=1;
 			GameObject vehicle;
 			vehicle = (GameObject)Instantiate(tank, new Vector3(0,0.3f,1.5f*turn), new Quaternion(0,0,0,0));
+			MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();
+			foreach(MeshRenderer mr in chillin)
+				mr.material.color = Color.blue;
+
 			vehicles.Add (vehicle);
 			turn++;
 			currentPlayer=2;
 		} else if (Input.GetKey ("5") && currentPlayer==2) {
 			currentPlayer=1;
 			GameObject vehicle;
-			vehicle = (GameObject)Instantiate(tank, new Vector3(1.7f,0.3f,1.5f*turn), new Quaternion(0,0,0,0));
+			vehicle = (GameObject)Instantiate(tank, new Vector3(3.4f,0.3f,1.5f*turn), new Quaternion(0,0,0,0));
+			MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();
+			foreach(MeshRenderer mr in chillin)
+				mr.material.color = Color.red;
+
 			vehicles.Add (vehicle);
 		}
 		//selectVehicle ();
 		foreach (GameObject go in vehicles) {
-			if (Vector3.Distance(go.transform.position, SelectUnit.clickedHex.worldPosition)<=1)
-				selected=go;
+			if(go != null && SelectUnit.clickedHex != null)
+				if (Vector3.Distance(go.transform.position, SelectUnit.clickedHex.worldPosition)<=1)
+					selected=go;
 			go.GetComponent<Vehicle>().moved=false;
 		}
-		if (Vector3.Distance (selected.transform.position, SelectUnit.clickedHex.worldPosition) > 1)
-			selected = null;
+		if(selected != null)
+			if (Vector3.Distance (selected.transform.position, SelectUnit.clickedHex.worldPosition) > 1)
+				selected = null;
 	}
 	void selectVehicle() {
 		//Debug.Log (vNum);
