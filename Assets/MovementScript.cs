@@ -3,64 +3,76 @@ using System.Collections;
 
 public class MovementScript : MonoBehaviour {
 	// Use this for initialization
-	float direction, totalMoved;
+	float totalMoved;
+	string direction;
 	bool moving;
 	public bool test=false;
+	GameObject theTank; //The currently selected gameobject
 
 	void Start () {
 		totalMoved = 0;
-		direction = 0;
+		direction = "";
 		moving = false;
 		//OnGUI ();
 	}
-	// Update is called once per frame
+
+	//Read key press to move selected tank
 	void Update () {
-		if (!moving) {
-			if (Input.GetKey ("1")) {
-				//transform.Translate(Vector3.right*Mathf.Sqrt(3));
-				beginMoving (1);
-			} else if (Input.GetKey ("2")) {
-				//transform.Translate(Vector3.forward*(float)1.5);
-				beginMoving (2);
-			} else if (Input.GetKey (KeyCode.J)) {
+		theTank = Gameplay.selected;
+		if (!moving)
+			if (Input.GetKey (KeyCode.Q))
+				beginMoving("ul");	//Move to the adjacent hex up and to the left
+			else if (Input.GetKey (KeyCode.E))
+				beginMoving("ur");	//Move up and right
+			else if(Input.GetKey(KeyCode.A))
+				beginMoving("l");	//Move left
+			else if(Input.GetKey(KeyCode.D))
+				beginMoving("r");	//Move right
+			else if(Input.GetKey(KeyCode.Z))
+				beginMoving("dl");	//Move down and left
+			else if(Input.GetKey(KeyCode.C))
+				beginMoving("dr");	//Move down and right
+			else if (Input.GetKey (KeyCode.J))
 				transform.Rotate(Vector3.down*Time.deltaTime*100);
-			} else if (Input.GetKey (KeyCode.L)) {
+			else if (Input.GetKey (KeyCode.L))
 				transform.Rotate(Vector3.up*Time.deltaTime*100);
-			}
-		} else {
-			beginMoving (direction);
-		}
+		else
+			beginMoving(direction);
 	}
-	void beginMoving(float dir) {
+
+	void beginMoving(string dir) {
 		direction = dir;
 		moving = true;
-		if (dir == 1) {
-			transform.Translate (Time.deltaTime*Vector3.right*Mathf.Sqrt(3),Space.World);
-			totalMoved+=Time.deltaTime*Mathf.Sqrt(3);
-		}
-		else if (dir == 2) {
-			transform.Translate (Time.deltaTime*Vector3.forward*(float)1.5,Space.World);
-			totalMoved+=Time.deltaTime*(float)1.5;
-		}
+		if(theTank!=null)
+			if(dir.Equals("ul")){
+				theTank.transform.Translate(-Mathf.Sqrt(3)/2f,0,1.5f);
+			}
+			else if(dir.Equals("ur")){
+				theTank.transform.Translate(Mathf.Sqrt(3)/2f,0,1.5f);
+			}
+			else if(dir.Equals("l")){
+				theTank.transform.Translate(-Mathf.Sqrt(3),0,0);
+			}
+			else if(dir.Equals("r")){
+				theTank.transform.Translate(Mathf.Sqrt(3),0,0);
+			}
+			else if(dir.Equals("dl")){
+				theTank.transform.Translate(-Mathf.Sqrt(3)/2f,0,-1.5f);
+			}
+			else if(dir.Equals("dr")){
+				theTank.transform.Translate(Mathf.Sqrt(3)/2f,0,-1.5f);
+			}
+
 		//right and left must move total of Mathf.Sqrt(3)
 		//other directions must move total of 1.5+Mathf.Sqrt(3)
-		if (dir == 1) {
-			if (totalMoved>Mathf.Sqrt(3))
-				moving=false;
-		}
-		else if (dir == 2) {
-			if (totalMoved>1.5)
-				moving=false;
-		}
+		
+		moving = false;
+
 		if (!moving) {
-			totalMoved = 0;
 			if (Gameplay.currentPlayer==1)
 				Gameplay.currentPlayer=2;
 			else
 				Gameplay.currentPlayer=1;
 		}
-	}
-	void OnGUI(){
-		GUI.Label(new Rect(transform.position.x+10, 10, 100, 20),"Hello World");
 	}
 }
