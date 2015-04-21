@@ -21,6 +21,7 @@ public class Gameplay : MonoBehaviour {
 			currentPlayer=1;
 			GameObject vehicle;
 			vehicle = (GameObject)Instantiate(tank, new Vector3(0,0.3f,1.5f*turn), new Quaternion(0,0,0,0));
+			vehicle.player = 1;
 			MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();
 			foreach(MeshRenderer mr in chillin)
 				mr.material.color = Color.blue;
@@ -31,7 +32,8 @@ public class Gameplay : MonoBehaviour {
 		} else if (Input.GetKey ("5") && currentPlayer==2) {
 			currentPlayer=1;
 			GameObject vehicle;
-			vehicle = (GameObject)Instantiate(tank, new Vector3(3.4f,0.3f,1.5f*turn), new Quaternion(0,0,0,0));
+			vehicle = (GameObject)Instantiate(tank, new Vector3(1.7f,0.3f,1.5f*(turn-1)), new Quaternion(0,0,0,0));
+			vehicle.player = 2;
 			MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();
 			foreach(MeshRenderer mr in chillin)
 				mr.material.color = Color.red;
