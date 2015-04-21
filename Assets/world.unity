@@ -351,7 +351,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tank: {fileID: 112792, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
-  dankMaterial: {fileID: 2100000, guid: a3c85462b91384152b713b231a37ad6f, type: 2}
   vNum: 0
 --- !u!114 &1998527593
 MonoBehaviour:

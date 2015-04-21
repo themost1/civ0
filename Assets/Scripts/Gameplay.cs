@@ -17,7 +17,7 @@ public class Gameplay : MonoBehaviour {
 		if (cooldown>0)
 			cooldown += Time.deltaTime;
 		if (Input.GetKey ("6") && currentPlayer==1) {
-			currentPlayer=1;
+			currentPlayer=2;
 			GameObject vehicle;
 			vehicle = (GameObject)Instantiate(tank, new Vector3(0,0.3f,1.5f*turn), new Quaternion(0,0,0,0));
 			MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();

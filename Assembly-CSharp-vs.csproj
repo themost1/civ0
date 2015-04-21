@@ -46,18 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BasicScript.cs" />
-     <Compile Include="Assets\CameraMovement.cs" />
-     <Compile Include="Assets\CivGridUtility.cs" />
-     <Compile Include="Assets\FireScript.cs" />
-     <Compile Include="Assets\Gameplay.cs" />
-     <Compile Include="Assets\HexChunk.cs" />
-     <Compile Include="Assets\HexInfo.cs" />
-     <Compile Include="Assets\MovementScript.cs" />
-     <Compile Include="Assets\SelectUnit.cs" />
-     <Compile Include="Assets\TankGunScript.cs" />
-     <Compile Include="Assets\Vehicle.cs" />
-     <Compile Include="Assets\WorldManager.cs" />
+     <Compile Include="Assets\Scripts\BasicScript.cs" />
+     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\CivGridUtility.cs" />
+     <Compile Include="Assets\Scripts\FireScript.cs" />
+     <Compile Include="Assets\Scripts\Gameplay.cs" />
+     <Compile Include="Assets\Scripts\HexChunk.cs" />
+     <Compile Include="Assets\Scripts\HexInfo.cs" />
+     <Compile Include="Assets\Scripts\MovementScript.cs" />
+     <Compile Include="Assets\Scripts\SelectUnit.cs" />
+     <Compile Include="Assets\Scripts\TankGunScript.cs" />
+     <Compile Include="Assets\Scripts\Vehicle.cs" />
+     <Compile Include="Assets\Scripts\WorldManager.cs" />
      <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
      <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
