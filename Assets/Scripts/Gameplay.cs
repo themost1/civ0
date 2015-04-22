@@ -16,27 +16,46 @@ public class Gameplay : MonoBehaviour {
 	void Update () {
 		if (cooldown>0)
 			cooldown += Time.deltaTime;
-		if (Input.GetKey ("6") && currentPlayer==1) {
-			currentPlayer=2;
-			GameObject vehicle;
-			vehicle = (GameObject)Instantiate(tank, new Vector3(0,0.3f,1.5f*turn), new Quaternion(0,0,0,0));
-			MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();
-			foreach(MeshRenderer mr in chillin)
-				mr.material.color = Color.blue;
+		if (Input.GetKey ("6")){
+			GameObject vehicle = null;
 
-			vehicles.Add (vehicle);
+			if(SelectUnit.clickedHex != null && !SelectUnit.clickedHex.full){
+				Vector3 pos = SelectUnit.clickedHex.worldPosition;
+				pos.y = 0.4f;
+				vehicle = (GameObject)Instantiate(tank, pos, new Quaternion(0,0,0,0));
+				currentPlayer=2;
+				SelectUnit.clickedHex.full = true;
+			}
+
+			if(vehicle != null){
+				MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();
+				foreach(MeshRenderer mr in chillin)
+					mr.material.color = Color.blue;
+
+				vehicles.Add (vehicle);
+			}
 			turn++;
-			currentPlayer=2;
-		} else if (Input.GetKey ("5") && currentPlayer==2) {
-			currentPlayer=1;
-			GameObject vehicle;
-			vehicle = (GameObject)Instantiate(tank, new Vector3(1.7f,0.3f,1.5f*turn), new Quaternion(0,0,0,0));
-			MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();
-			foreach(MeshRenderer mr in chillin)
-				mr.material.color = Color.red;
+		} 
+		else if (Input.GetKey ("5") && currentPlayer==2) {
+			GameObject vehicle = null;
 
-			vehicles.Add (vehicle);
+			if(SelectUnit.clickedHex != null && !SelectUnit.clickedHex.full){
+				Vector3 pos = SelectUnit.clickedHex.worldPosition;
+				pos.y = 0.4f;
+				vehicle = (GameObject)Instantiate(tank, pos, new Quaternion(0,0,0,0));
+				vehicle.transform.Rotate(Vector3.right);
+				currentPlayer=1;
+				SelectUnit.clickedHex.full = true;
+			}
+
+			if(vehicle != null){
+				MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();
+				foreach(MeshRenderer mr in chillin)
+					mr.material.color = Color.red;
+				vehicles.Add (vehicle);
+			}
 		}
+
 		//selectVehicle ();
 		foreach (GameObject go in vehicles) {
 			if(go != null && SelectUnit.clickedHex != null)

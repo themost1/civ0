@@ -18,7 +18,7 @@ public class HexInfo
 	
 	public Mesh localMesh;
 	
-	public bool clicked, previouslyGenerated;
+	public bool clicked, previouslyGenerated, full = false;
 	public float randy;
 	public float randx;
 	public float prevx, prevy;

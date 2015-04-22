@@ -44,7 +44,6 @@ public class MovementScript : MonoBehaviour {
 
 	void beginMoving(string dir) {
 		direction = dir;
-		Debug.Log(dir);
 		moving = true;
 
 		if(totalMoved == 0)
