@@ -44,10 +44,6 @@ public class MovementScript : MonoBehaviour {
 
 	void beginMoving(string dir) {
 		direction = dir;
-<<<<<<< HEAD
-=======
-		Debug.Log(dir);
->>>>>>> origin/startmenu
 		moving = true;
 
 		if(totalMoved == 0)
