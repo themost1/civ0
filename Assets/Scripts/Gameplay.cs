@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Gameplay : MonoBehaviour {
 	public static float cooldown=0;
-	public float spawnRadius;
+	public float spawnRadius = 4f;
 	public static int currentPlayer=1;
 	public GameObject tank;
 	public static GameObject selected;
@@ -13,7 +13,6 @@ public class Gameplay : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		cooldown = 0.1f;
-		spawnRadius = 5f;
 	}
 	
 	// Update is called once per frame
