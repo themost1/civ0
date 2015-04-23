@@ -12,7 +12,7 @@ public class FireScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.Space) && !fired && Gameplay.selected.Equals(transform.root.gameObject) && !transform.root.GetComponent<Vehicle>().moved) {
+		if (Input.GetKey(KeyCode.Space) && !fired && Gameplay.selected!=null && Gameplay.selected.Equals(transform.root.gameObject) && !transform.root.GetComponent<Vehicle>().moved) {
 			fired=true;
 			GameObject cannonball;
 			cannonball = (GameObject)Instantiate(ball, transform.position, transform.rotation);

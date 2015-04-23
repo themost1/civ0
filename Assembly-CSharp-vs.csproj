@@ -55,6 +55,10 @@
      <Compile Include="Assets\Scripts\HexInfo.cs" />
      <Compile Include="Assets\Scripts\MovementScript.cs" />
      <Compile Include="Assets\Scripts\SelectUnit.cs" />
+<<<<<<< HEAD
+=======
+     <Compile Include="Assets\Scripts\StartMenuScript.cs" />
+>>>>>>> origin/startmenu
      <Compile Include="Assets\Scripts\TankGunScript.cs" />
      <Compile Include="Assets\Scripts\Vehicle.cs" />
      <Compile Include="Assets\Scripts\WorldManager.cs" />
