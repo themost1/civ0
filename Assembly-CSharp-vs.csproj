@@ -56,7 +56,6 @@
      <Compile Include="Assets\Scripts\MovementScript.cs" />
      <Compile Include="Assets\Scripts\SelectUnit.cs" />
      <Compile Include="Assets\Scripts\StartMenuScript.cs" />
-     <Compile Include="Assets\Scripts\TankGunScript.cs" />
      <Compile Include="Assets\Scripts\Vehicle.cs" />
      <Compile Include="Assets\Scripts\WorldManager.cs" />
      <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />

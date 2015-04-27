@@ -40,7 +40,7 @@ public class Gameplay : MonoBehaviour {
 				if(SelectUnit.clickedHex != null && !SelectUnit.clickedHex.full){
 					Vector3 pos = SelectUnit.clickedHex.worldPosition;
 					pos.y = 0.4f;
-					vehicle = (GameObject)Instantiate(tank, pos, new Quaternion(0,0,0,0));
+					vehicle = (GameObject)Instantiate(tank,pos,new Quaternion(0,0,0,0));
 					vehicle.GetComponent<Vehicle>().player = currentPlayer;
 					MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();
 					foreach(MeshRenderer mr in chillin)

@@ -20,6 +20,8 @@ public class MovementScript : MonoBehaviour {
 	//Read key press to move selected tank
 	void Update () {
 		if (!moving){
+			theTank = Gameplay.selected;
+			
 			if (Input.GetKey (KeyCode.Q))
 				beginMoving("ul");	//Move to the adjacent hex up and to the left
 			else if (Input.GetKey (KeyCode.E))
@@ -32,10 +34,14 @@ public class MovementScript : MonoBehaviour {
 				beginMoving("dl");	//Move down and left
 			else if(Input.GetKey(KeyCode.C))
 				beginMoving("dr");	//Move down and right
-			else if (Input.GetKey (KeyCode.J))
-				transform.Rotate(Vector3.down*Time.deltaTime*100);
-			else if (Input.GetKey (KeyCode.L))
-				transform.Rotate(Vector3.up*Time.deltaTime*100);
+			else if(Input.GetKey(KeyCode.J))			
+				theTank.transform.Rotate(Vector3.down*Time.deltaTime*69);
+			else if(Input.GetKey(KeyCode.L))
+				theTank.transform.Rotate(Vector3.up*Time.deltaTime*69);
+			else if(Input.GetKey(KeyCode.I))
+				theTank.transform.Find("MainGun").Rotate(Vector3.left*Time.deltaTime*69);
+			else if(Input.GetKey(KeyCode.K))
+				theTank.transform.Find("MainGun").Rotate(Vector3.right*Time.deltaTime*69);
 		}
 		else{
 			beginMoving(direction);
@@ -46,48 +52,45 @@ public class MovementScript : MonoBehaviour {
 		direction = dir;
 		moving = true;
 
-		if(totalMoved == 0)
-			theTank = Gameplay.selected;
-
 		if(theTank!=null){
 			float dt = Time.deltaTime;
 			if(dir.Equals("ul")){
-				theTank.transform.Translate(-xDist*dt,0,zDist*dt);
+				theTank.transform.Translate(-xDist*dt,0,zDist*dt,Space.World);
 				totalMoved += xDist*dt + zDist*dt;
 
 				if(totalMoved >= xDist + zDist)
 					moving = false;
 			}
 			else if(dir.Equals("ur")){
-				theTank.transform.Translate(xDist*dt,0,zDist*dt);
+				theTank.transform.Translate(xDist*dt,0,zDist*dt,Space.World);
 				totalMoved += xDist*dt + zDist*dt;
 
 				if(totalMoved >= xDist + zDist)
 					moving = false;
 			}
 			else if(dir.Equals("l")){
-				theTank.transform.Translate(-xDist*2f*dt,0,0);
+				theTank.transform.Translate(-xDist*2f*dt,0,0,Space.World);
 				totalMoved += xDist*2f*dt;
 
 				if(totalMoved >= xDist*2f)
 					moving = false;
 			}
 			else if(dir.Equals("r")){
-				theTank.transform.Translate(xDist*2f*dt,0,0);
+				theTank.transform.Translate(xDist*2f*dt,0,0,Space.World);
 				totalMoved += xDist*2f*dt;
 
 				if(totalMoved >= xDist*2f)
 					moving = false;
 			}
 			else if(dir.Equals("dl")){
-				theTank.transform.Translate(-xDist*dt,0,-zDist*dt);
+				theTank.transform.Translate(-xDist*dt,0,-zDist*dt,Space.World);
 				totalMoved += xDist*dt + zDist*dt;
 
 				if(totalMoved >= xDist + zDist)
 					moving = false;
 			}
 			else if(dir.Equals("dr")){
-				theTank.transform.Translate(xDist*dt,0,-zDist*dt);
+				theTank.transform.Translate(xDist*dt,0,-zDist*dt,Space.World);
 				totalMoved += xDist*dt + zDist*dt;
 
 				if(totalMoved >= xDist + zDist)
