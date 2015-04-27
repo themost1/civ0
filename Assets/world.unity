@@ -616,7 +616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91793744da3da4a09a5fb2c651a1c34d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRadius: 0
+  spawnRadius: 4
   tank: {fileID: 112792, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
   vNum: 0
 --- !u!114 &1998527593
