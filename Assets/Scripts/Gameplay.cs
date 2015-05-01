@@ -58,16 +58,17 @@ public class Gameplay : MonoBehaviour {
 				}
 			}
 		}
-		
-		
 
 		selectVehicle ();
 	}
 
 	void selectVehicle() {
+		selected = null;
 		foreach(GameObject go in vehicles)
 			if(go.GetComponent<Vehicle>().player == currentPlayer)
-				if(Vector3.Distance(go.transform.position,SelectUnit.clickedHex.worldPosition) < 1)
+				if(Vector3.Distance(go.transform.position,SelectUnit.clickedHex.worldPosition) < 1){
 					selected = go;
+					Debug.Log ("Tank selected");
+				}
 	}
 }

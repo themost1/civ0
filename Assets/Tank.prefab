@@ -61,7 +61,6 @@ GameObject:
   - 4: {fileID: 410304}
   - 114: {fileID: 11436690}
   - 114: {fileID: 11490258}
-  - 114: {fileID: 11415546}
   - 23: {fileID: 2367270}
   m_Layer: 0
   m_Name: Tank
@@ -2419,18 +2418,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &11415546
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d42ae5dfc3bf40af939d81163337a42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  test: 0
 --- !u!114 &11425600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2479,6 +2466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: 0
   moved: 0
+  health: 100
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
