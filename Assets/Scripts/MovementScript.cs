@@ -113,7 +113,25 @@ public class MovementScript : MonoBehaviour {
 		//right and left must move total of Mathf.Sqrt(3)
 		//other directions must move total of 1.5+Mathf.Sqrt(3)
 
-		if(!moving)
+		if(!moving){
 			totalMoved = 0;
+			
+			SelectUnit.clickedHex.full = false;
+			SelectUnit.clickedHex.clicked = false;
+			SelectUnit.clickedHex.Start();
+			SelectUnit.clickedHex.parentChunk.Combine();
+			
+			HexInfo theHex = null;
+			foreach(HexChunk chunk in WorldManager.hexChunks)
+				foreach(HexInfo hex in chunk.hexArray)
+					if(Vector3.Distance(theTank.transform.position,hex.worldPosition)<1f)
+						theHex = hex;
+						
+			SelectUnit.clickedHex = theHex;
+			SelectUnit.clickedHex.full = true;
+			SelectUnit.clickedHex.clicked = true;
+			SelectUnit.clickedHex.Start();
+			SelectUnit.clickedHex.parentChunk.Combine();
+		}
 	}
 }
