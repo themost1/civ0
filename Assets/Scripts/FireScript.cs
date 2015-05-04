@@ -15,8 +15,9 @@ public class FireScript : MonoBehaviour {
 		if (Input.GetKey(KeyCode.F)) {
 			fired=false;
 		}
-		if (Input.GetKey(KeyCode.Space) && !fired && Gameplay.selected!=null && Gameplay.selected.Equals(transform.root.gameObject)) {
+		if (Input.GetKey(KeyCode.Space) && !fired && Gameplay.selected!=null && Gameplay.selected.Equals(transform.root.gameObject) && Gameplay.powerPoints > 0) {
 			fired=true;
+			Gameplay.powerPoints--;
 			GameObject cannonball;
 			cannonball = (GameObject)Instantiate(ball, transform.position, transform.rotation);
 			Vector3 dir = new Vector3(0,0,speed);

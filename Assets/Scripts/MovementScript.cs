@@ -62,49 +62,61 @@ public class MovementScript : MonoBehaviour {
 		direction = dir;
 		moving = true;
 
-		if(theTank!=null){
+		if(theTank!=null && Gameplay.powerPoints > 0){
 			float dt = Time.deltaTime;
 			if(dir == MovementDirection.UPLEFT){
 				theTank.transform.Translate(-xDist*dt,0,zDist*dt,Space.World);
 				totalMoved += xDist*dt + zDist*dt;
 
-				if(totalMoved >= xDist + zDist)
+				if(totalMoved >= xDist + zDist){
 					moving = false;
+					Gameplay.powerPoints--;
+				}
 			}
 			else if(dir == MovementDirection.UPRIGHT){
 				theTank.transform.Translate(xDist*dt,0,zDist*dt,Space.World);
 				totalMoved += xDist*dt + zDist*dt;
 
-				if(totalMoved >= xDist + zDist)
+				if(totalMoved >= xDist + zDist){
 					moving = false;
+					Gameplay.powerPoints--;
+				}
 			}
 			else if(dir == MovementDirection.LEFT){
 				theTank.transform.Translate(-xDist*2f*dt,0,0,Space.World);
 				totalMoved += xDist*2f*dt;
 
-				if(totalMoved >= xDist*2f)
+				if(totalMoved >= xDist*2f){
 					moving = false;
+					Gameplay.powerPoints--;
+				}
 			}
 			else if(dir == MovementDirection.RIGHT){
 				theTank.transform.Translate(xDist*2f*dt,0,0,Space.World);
 				totalMoved += xDist*2f*dt;
 
-				if(totalMoved >= xDist*2f)
+				if(totalMoved >= xDist*2f){
 					moving = false;
+					Gameplay.powerPoints--;
+				}
 			}
 			else if(dir == MovementDirection.DOWNLEFT){
 				theTank.transform.Translate(-xDist*dt,0,-zDist*dt,Space.World);
 				totalMoved += xDist*dt + zDist*dt;
 
-				if(totalMoved >= xDist + zDist)
+				if(totalMoved >= xDist + zDist){
 					moving = false;
+					Gameplay.powerPoints--;
+				}
 			}
 			else if(dir == MovementDirection.DOWNRIGHT){
 				theTank.transform.Translate(xDist*dt,0,-zDist*dt,Space.World);
 				totalMoved += xDist*dt + zDist*dt;
 
-				if(totalMoved >= xDist + zDist)
+				if(totalMoved >= xDist + zDist){
 					moving = false;
+					Gameplay.powerPoints--;
+				}
 			}
 		}
 		else

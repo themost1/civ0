@@ -9,17 +9,32 @@ public class Gameplay : MonoBehaviour {
 	public static GameObject selected;
 	public int vNum;
 	public ArrayList vehicles = new ArrayList();
+	public static int powerPoints = 5;
 
 	// Use this for initialization
 	void Start () {
 		cooldown = 0.1f;
 	}
 	
+	void OnGUI(){
+		Texture2D dankBG = new Texture2D(1,1);
+		dankBG.SetPixel(1,1,new Color(50,50,50));
+		dankBG.wrapMode = TextureWrapMode.Repeat;
+		dankBG.Apply();
+		GUIStyle dankStyle = new GUIStyle();
+		GUIStyleState dankSS = new GUIStyleState();
+		dankSS.background = dankBG;
+		dankStyle.normal = dankSS;
+		dankStyle.alignment = TextAnchor.MiddleCenter;
+	
+		GUI.Label(new Rect(25,25,100,30), "Powerpoints: " + powerPoints,dankStyle);	
+	}
+	
 	// Update is called once per frame
 	void Update () {
 		if (cooldown>0)
 			cooldown += Time.deltaTime;
-		if (Input.GetKey ("6")){
+		if (Input.GetKey ("6") && powerPoints > 1){
 			GameObject vehicle = null;
 
 			bool canSpawn = false;
@@ -38,6 +53,7 @@ public class Gameplay : MonoBehaviour {
 			
 			if(canSpawn){
 				if(SelectUnit.clickedHex != null && !SelectUnit.clickedHex.full){
+					powerPoints -= 2;
 					Vector3 pos = SelectUnit.clickedHex.worldPosition;
 					pos.y = 0.4f;
 					vehicle = (GameObject)Instantiate(tank,pos,new Quaternion(0,0,0,0));
