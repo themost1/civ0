@@ -8,7 +8,7 @@ public class Gameplay : MonoBehaviour {
 	public GameObject tank;
 	public static GameObject selected;
 	public int vNum;
-	public ArrayList vehicles = new ArrayList();
+	public static ArrayList vehicles = new ArrayList();
 	public static int powerPoints = 5;
 
 	// Use this for initialization
@@ -28,12 +28,14 @@ public class Gameplay : MonoBehaviour {
 		dankStyle.alignment = TextAnchor.MiddleCenter;
 	
 		GUI.Label(new Rect(25,25,100,30), "Powerpoints: " + powerPoints,dankStyle);	
+		GUI.Label(new Rect(25,65,100,30), "Current player: " + currentPlayer,dankStyle);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (cooldown>0)
 			cooldown += Time.deltaTime;
+			
 		if (Input.GetKey ("6") && powerPoints > 1){
 			GameObject vehicle = null;
 
@@ -82,9 +84,7 @@ public class Gameplay : MonoBehaviour {
 		selected = null;
 		foreach(GameObject go in vehicles)
 			if(go.GetComponent<Vehicle>().player == currentPlayer)
-				if(Vector3.Distance(go.transform.position,SelectUnit.clickedHex.worldPosition) < 1){
+				if(Vector3.Distance(go.transform.position,SelectUnit.clickedHex.worldPosition) < 1)
 					selected = go;
-					Debug.Log ("Tank selected");
-				}
 	}
 }
