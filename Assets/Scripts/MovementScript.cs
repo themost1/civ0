@@ -56,25 +56,23 @@ public class MovementScript : MonoBehaviour {
 	}
 
 	void beginMoving(Vector3 dir) {
+		direction = dir;
 		bool canMove = true;
 		foreach(GameObject tnak in Gameplay.vehicles)
-			if(!tnak.Equals(theTank) && Vector3.Distance(tnak.transform.position,theTank.transform.position+direction) < 1f)
+			if(theTank != null && tnak != null && !tnak.Equals(theTank) && 
+				Vector3.Distance(tnak.transform.position,theTank.transform.position+direction) < 0.1f)
 				canMove = false;
 				
-		direction = dir;
 		moving = true;
 
-		if(theTank!=null && Gameplay.powerPoints > 0){
-			float dt = Time.deltaTime;	
-			
-			if(canMove){
-				theTank.transform.Translate(direction.x*dt,0,direction.z*dt,Space.World);
-				totalMoved += (Mathf.Abs(direction.x) + Mathf.Abs(direction.z))*dt;
+		if(theTank!=null && Gameplay.powerPoints > 0 && canMove){
+			float dt = Time.deltaTime;
+			theTank.transform.Translate(direction.x*dt,0,direction.z*dt,Space.World);
+			totalMoved += (Mathf.Abs(direction.x) + Mathf.Abs(direction.z))*dt;
 
-				if(totalMoved >= ((Mathf.Abs(direction.x) + Mathf.Abs(direction.z))*(1-dt))){
-					moving = false;
-					Gameplay.powerPoints--;
-				}
+			if(totalMoved >= ((Mathf.Abs(direction.x) + Mathf.Abs(direction.z))*(1-dt))){
+				moving = false;
+				Gameplay.powerPoints--;
 			}
 		}
 		else
