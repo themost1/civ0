@@ -17,6 +17,7 @@ public class BasicScript : MonoBehaviour {
 		if(col.gameObject.name == "cannonball")
 		{
 			Destroy(col.gameObject);
+			//this is not working
 		}
 	}
 }
