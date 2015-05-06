@@ -1,15 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Gameplay.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Downloads/civmay5/Assets/Scripts/BasicScript.cs">
     <Files>
-      <File FileName="Assets/WorldManager.cs" Line="9" Column="10" />
-      <File FileName="Assets/Gameplay.cs" Line="34" Column="88" />
-      <File FileName="Assets/Vehicle.cs" Line="1" Column="1" />
-      <File FileName="Assets/FireScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/MovementScript.cs" Line="19" Column="26" />
-      <File FileName="Assets/HexChunk.cs" Line="209" Column="2" />
-      <File FileName="Assets/HexInfo.cs" Line="99" Column="30" />
-      <File FileName="Assets/SelectUnit.cs" Line="31" Column="47" />
+      <File FileName="../../Downloads/civmay5/Assets/Scripts/MovementScript.cs" Line="53" Column="5" />
+      <File FileName="../../Downloads/civmay5/Assets/Scripts/Gameplay.cs" Line="1" Column="1" />
+      <File FileName="../../Downloads/civmay5/Assets/Scripts/BasicScript.cs" Line="17" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
