@@ -14,9 +14,13 @@ public class BasicScript : MonoBehaviour {
 	}
 	void OnCollisionEnter (Collision col)
 	{
-		if(col.gameObject.name == "cannonball")
+		Debug.Log ("Hit");
+		if(col.gameObject.name == "Ball(Clone)")
 		{
+			Debug.Log("Hit by ball");
 			Destroy(col.gameObject);
+			Gameplay.vehicles.Remove(gameObject);
+			Destroy(gameObject);
 		}
 	}
 }
