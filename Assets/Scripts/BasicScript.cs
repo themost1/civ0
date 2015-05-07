@@ -18,6 +18,7 @@ public class BasicScript : MonoBehaviour {
 		if(col.gameObject.name == "Ball(Clone)")
 		{
 			Debug.Log("Hit by ball");
+			col.gameObject.GetComponent<BallPosition>().explode();
 			Destroy(col.gameObject);
 			Gameplay.vehicles.Remove(gameObject);
 			Destroy(gameObject);
