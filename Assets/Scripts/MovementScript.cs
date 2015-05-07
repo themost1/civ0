@@ -46,9 +46,9 @@ public class MovementScript : MonoBehaviour {
 			else if(Input.GetKey(KeyCode.L))
 				theTank.transform.Rotate(Vector3.up*Time.deltaTime*69);
 			else if(Input.GetKey(KeyCode.I))
-				theTank.transform.Find("MainGun").Rotate(Vector3.left*Time.deltaTime*69);
+				rotateBarrel(Vector3.left); //Rotate barrel up
 			else if(Input.GetKey(KeyCode.K))
-				theTank.transform.Find("MainGun").Rotate(Vector3.right*Time.deltaTime*69);
+				rotateBarrel(Vector3.right); //Rotate barrel down
 		}
 		else{
 			beginMoving(direction);
@@ -106,5 +106,24 @@ public class MovementScript : MonoBehaviour {
 			SelectUnit.clickedHex.Start();
 			SelectUnit.clickedHex.parentChunk.Combine();
 		}
+	}
+	
+	void rotateBarrel(Vector3 dir){
+		Transform barrel = theTank.transform.Find("MainGun");
+		float dt = Time.deltaTime*69f;
+		bool canRotate = false;
+		
+		if(dir == Vector3.right)
+			theTank.GetComponent<Vehicle>().barrelRotation -= dt;
+		else
+			theTank.GetComponent<Vehicle>().barrelRotation += dt;
+			
+		if(theTank.GetComponent<Vehicle>().barrelRotation >= -23f)
+			canRotate = true;
+		else if(theTank.GetComponent<Vehicle>().barrelRotation <= 100f)
+			canRotate = true;
+		
+		if(canRotate)
+			barrel.Rotate(dir*dt);		
 	}
 }
