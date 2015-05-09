@@ -14,14 +14,17 @@ public class BasicScript : MonoBehaviour {
 	}
 	void OnCollisionEnter (Collision col)
 	{
-		Debug.Log ("Hit");
 		if(col.gameObject.name == "Ball(Clone)")
 		{
-			Debug.Log("Hit by ball");
 			col.gameObject.GetComponent<BallPosition>().explode();
 			Destroy(col.gameObject);
-			Gameplay.vehicles.Remove(gameObject);
-			Destroy(gameObject);
+			
+			GetComponent<Vehicle>().health -= 40f;
+			if(gameObject.GetComponent<Vehicle>().health <= 0f){
+				gameObject.GetComponent<Vehicle>().explode();
+				Gameplay.vehicles.Remove(gameObject);
+				Destroy(gameObject);
+			}
 		}
 	}
 }

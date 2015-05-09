@@ -2484,6 +2484,8 @@ MonoBehaviour:
   player: 0
   moved: 0
   health: 100
+  barrelRotation: 0
+  Explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
