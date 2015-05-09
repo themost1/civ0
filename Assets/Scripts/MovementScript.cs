@@ -113,17 +113,22 @@ public class MovementScript : MonoBehaviour {
 		float dt = Time.deltaTime*69f;
 		bool canRotate = false;
 		
-		if(dir == Vector3.right)
+		if(dir == Vector3.right){
 			theTank.GetComponent<Vehicle>().barrelRotation -= dt;
-		else
+			if(theTank.GetComponent<Vehicle>().barrelRotation >= -23f)
+				canRotate = true;
+			else
+				theTank.GetComponent<Vehicle>().barrelRotation = -23f;
+		}
+		else{
 			theTank.GetComponent<Vehicle>().barrelRotation += dt;
-			
-		if(theTank.GetComponent<Vehicle>().barrelRotation >= -23f)
-			canRotate = true;
-		else if(theTank.GetComponent<Vehicle>().barrelRotation <= 100f)
-			canRotate = true;
+			if(theTank.GetComponent<Vehicle>().barrelRotation <= 110f)
+				canRotate = true;
+			else
+				theTank.GetComponent<Vehicle>().barrelRotation = 110f;
+		}
 		
 		if(canRotate)
-			barrel.Rotate(dir*dt);		
+			barrel.Rotate(dir*dt);
 	}
 }
