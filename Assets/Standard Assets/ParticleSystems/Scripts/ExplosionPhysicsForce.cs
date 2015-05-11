@@ -7,7 +7,7 @@ namespace UnityStandardAssets.Effects
 {
     public class ExplosionPhysicsForce : MonoBehaviour
     {
-        public float explosionForce = 4;
+        public float explosionForce = 0;
 
 
         private IEnumerator Start()
