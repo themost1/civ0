@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\HexInfo.cs" />
      <Compile Include="Assets\Scripts\MovementScript.cs" />
      <Compile Include="Assets\Scripts\SelectUnit.cs" />
+     <Compile Include="Assets\Scripts\SpawnTrees.cs" />
      <Compile Include="Assets\Scripts\StartMenuScript.cs" />
      <Compile Include="Assets\Scripts\Vehicle.cs" />
      <Compile Include="Assets\Scripts\WorldManager.cs" />

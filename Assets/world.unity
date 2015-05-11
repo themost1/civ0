@@ -923,6 +923,7 @@ GameObject:
   - 45: {fileID: 1998527594}
   - 114: {fileID: 1998527595}
   - 114: {fileID: 1998527596}
+  - 114: {fileID: 1998527597}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1066,3 +1067,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54561d69e47a4e09b6d291168179eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1998527597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998527585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7809f77d37ae14c9ebb738dc008ae65e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conifer: {fileID: 100016, guid: 469edab27ab6d004d84af2c4a851bd7f, type: 3}
+  Broadleaf: {fileID: 100000, guid: c91c1eb85782d5748ace27eb4d7415bb, type: 3}

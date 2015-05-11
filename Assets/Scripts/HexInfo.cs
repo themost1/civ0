@@ -23,6 +23,9 @@ public class HexInfo
 	public float randx;
 	public float prevx, prevy;
 	
+	public bool conifer = false;
+	public bool broadleaf = false;
+	
 	//basic hexagon mesh making
 	public Vector3[] vertices;
 	public Vector2[] uv;
@@ -97,6 +100,11 @@ public class HexInfo
 			}
 			if (!previouslyGenerated)
 				previouslyGenerated=true;
+			
+			if((randx == 3f && randy == 3f) || (randx == 2f && randy == 0f))
+				conifer = true;
+			else if(randx == 2f && randy == 3f)
+				broadleaf = true;
 		}
 		else{
 			randx = 3f;
