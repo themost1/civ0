@@ -63,7 +63,6 @@ GameObject:
   - 114: {fileID: 11490258}
   - 23: {fileID: 2367270}
   - 65: {fileID: 6593086}
-  - 54: {fileID: 5409102}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -2404,21 +2403,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156640}
   m_Mesh: {fileID: 4300062, guid: 2d94bc9cfdef047a18e474b54a5d3d59, type: 3}
---- !u!54 &5409102
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112792}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!54 &5494822
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -2484,6 +2468,7 @@ MonoBehaviour:
   player: 0
   moved: 0
   health: 100
+  barrelRotation: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
