@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SpawnTrees.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BasicScript.cs">
     <Files>
       <File FileName="Assets/Scripts/SpawnTrees.cs" Line="25" Column="8" />
+      <File FileName="Assets/Scripts/BasicScript.cs" Line="29" Column="63" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

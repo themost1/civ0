@@ -19,15 +19,15 @@ public class BasicScript : MonoBehaviour {
 			col.gameObject.GetComponent<BallPosition>().explode();
 			Destroy(col.gameObject);
 			
-			foreach(HexChunk chunk in WorldManager.hexChunks)
-				foreach(HexInfo hex in chunk.hexArray)
-					if(hex.worldPosition == gameObject.transform.position)
-						hex.full = false;
-			
 			GetComponent<Vehicle>().health -= 40f;
 			if(gameObject.GetComponent<Vehicle>().health <= 0f){
 				gameObject.GetComponent<Vehicle>().explode();
 				Gameplay.vehicles.Remove(gameObject);
+				foreach(HexChunk chunk in WorldManager.hexChunks)
+					foreach(HexInfo hex in chunk.hexArray)
+						if(hex.worldPosition.x==gameObject.transform.position.x &&
+						   hex.worldPosition.z==gameObject.transform.position.z)
+							hex.full = false;
 				Destroy(gameObject);
 			}
 		}
