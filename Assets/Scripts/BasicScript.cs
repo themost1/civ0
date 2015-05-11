@@ -21,6 +21,12 @@ public class BasicScript : MonoBehaviour {
 			col.gameObject.GetComponent<BallPosition>().explode();
 			Destroy(col.gameObject);
 			Gameplay.vehicles.Remove(gameObject);
+			
+			foreach(HexChunk chunk in WorldManager.hexChunks)
+				foreach(HexInfo hex in chunk.hexArray)
+					if(hex.worldPosition == gameObject.transform.position)
+						hex.full = false;
+			
 			Destroy(gameObject);
 		}
 	}
