@@ -36,7 +36,7 @@ public class Gameplay : MonoBehaviour {
 		if (cooldown>0)
 			cooldown += Time.deltaTime;
 			
-		if (Input.GetKey ("6") && powerPoints > 1){
+		if (Input.GetKey ("1") && powerPoints > 1){
 			GameObject vehicle = null;
 
 			bool canSpawn = false;
