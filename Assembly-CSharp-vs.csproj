@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\BasicScript.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\CivGridUtility.cs" />
+     <Compile Include="Assets\Scripts\CubeScript.cs" />
      <Compile Include="Assets\Scripts\EndTurnButtonPosition.cs" />
      <Compile Include="Assets\Scripts\EndTurnButtonScript.cs" />
      <Compile Include="Assets\Scripts\FireScript.cs" />

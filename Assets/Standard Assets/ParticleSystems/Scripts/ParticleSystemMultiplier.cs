@@ -10,7 +10,7 @@ namespace UnityStandardAssets.Effects
         public float multiplier = 1;
 
 
-        private void Start()
+        public void Start()
         {
             var systems = GetComponentsInChildren<ParticleSystem>();
             foreach (ParticleSystem system in systems)
