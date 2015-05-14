@@ -9,11 +9,14 @@ public class Gameplay : MonoBehaviour {
 	public static GameObject selected;
 	public int vNum;
 	public static ArrayList vehicles = new ArrayList();
-	public static int powerPoints = 5;
+	public static int powerPoints = 10;
+	public static int turns = 1;
+	public static int tankCost, wallCost;
 
 	// Use this for initialization
 	void Start () {
 		cooldown = 0.1f;
+		calcCosts();
 	}
 	
 	void OnGUI(){
@@ -27,8 +30,12 @@ public class Gameplay : MonoBehaviour {
 		dankStyle.normal = dankSS;
 		dankStyle.alignment = TextAnchor.MiddleCenter;
 	
-		GUI.Label(new Rect(25,25,100,30), "Powerpoints: " + powerPoints,dankStyle);	
-		GUI.Label(new Rect(25,65,100,30), "Current player: " + currentPlayer,dankStyle);
+		GUI.Label(new Rect(25,25,100,80), "Powerpoints: " + powerPoints
+											+ "\nCurrent player: " + currentPlayer
+											+ "\nTurns: "+turns
+											+ "\nTank Cost: "+tankCost
+											+ "\nWall Cost: "+wallCost
+		          							,dankStyle);
 	}
 	
 	// Update is called once per frame
@@ -36,7 +43,7 @@ public class Gameplay : MonoBehaviour {
 		if (cooldown>0)
 			cooldown += Time.deltaTime;
 			
-		if (Input.GetKey ("1") && powerPoints > 1){
+		if (Input.GetKey ("1") && powerPoints >= tankCost){
 			GameObject vehicle = null;
 
 			bool canSpawn = false;
@@ -55,7 +62,7 @@ public class Gameplay : MonoBehaviour {
 			
 			if(canSpawn){
 				if(SelectUnit.clickedHex != null && !SelectUnit.clickedHex.full){
-					powerPoints -= 2;
+					powerPoints -= tankCost;
 					Vector3 pos = SelectUnit.clickedHex.worldPosition;
 					pos.y = 0.4f;
 					vehicle = (GameObject)Instantiate(tank,pos,new Quaternion(0,0,0,0));
@@ -80,6 +87,11 @@ public class Gameplay : MonoBehaviour {
 		}
 
 		selectVehicle ();
+	}
+	
+	public static void calcCosts(){
+		tankCost = (int)(10f/(1f + Mathf.Exp(-0.25f*(turns-4f))));
+		wallCost = (int)(6f/(1f + Mathf.Exp(-0.25f*(turns-5f))));
 	}
 
 	void selectVehicle() {
