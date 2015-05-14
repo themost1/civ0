@@ -21,15 +21,15 @@ public class Vehicle : MonoBehaviour {
 	{
 		
 		// draw the background:
-		GUI.BeginGroup (new Rect (pos.x, pos.y, size.x, size.y));
-		GUI.Box (Rect (0,0, size.x, size.y),progressBarEmpty);
+		/*GUI.BeginGroup (new Rect (pos.x, pos.y, size.x, size.y));
+		GUI.Box (new Rect (pos.x, pos.y, size.x, size.y),progressBarEmpty);
 		
 		// draw the filled-in part:
 		GUI.BeginGroup (new Rect (0, 0, size.x * barDisplay, size.y));
-		GUI.Box (Rect (0,0, size.x, size.y),progressBarFull);
+		GUI.Box (new Rect (5, 15, size.x, size.y),progressBarFull);
 		GUI.EndGroup ();
 		
-		GUI.EndGroup ();
+		GUI.EndGroup ();*/
 		
 	} 
 	
@@ -38,7 +38,8 @@ public class Vehicle : MonoBehaviour {
 		// for this example, the bar display is linked to the current time,
 		// however you would set this value based on your desired display
 		// eg, the loading progress, the player's health, or whatever.
-		barDisplay = Time.time * 0.05;
+		//barDisplay = Time.time * 0.05;
+		transform.Find ("HealthBar").gameObject.transform.localScale = new Vector3 (health/10, transform.Find ("HealthBar").gameObject.transform.localScale.y, transform.Find ("HealthBar").gameObject.transform.localScale.z);
 	}
 	public void explode(){		
 		//Explosion.GetComponent<ParticleSystemMultiplier>().multiplier = 0.4f;

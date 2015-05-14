@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CubeScript : MonoBehaviour {
 	public GameObject Explosion;
-	public float health = 80;
+	public float health = 80, initHeight=1.2f;
 	
 	public void OnCollisionEnter(Collision col){
 		if(col.gameObject.name == "Ball(Clone)")
@@ -12,6 +12,7 @@ public class CubeScript : MonoBehaviour {
 			Destroy(col.gameObject);
 			
 			health -= 40f;
+			transform.localScale = new Vector3(transform.localScale.x,transform.localScale.y*1/2,transform.localScale.z);
 			if(health <= 0f){
 				explode();
 				foreach(HexChunk chunk in WorldManager.hexChunks)

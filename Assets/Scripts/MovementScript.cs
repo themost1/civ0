@@ -5,7 +5,7 @@ public class MovementScript : MonoBehaviour {
 	// Use this for initialization
 	float totalMoved;
 	Vector3 direction;
-	bool moving;
+	bool moving, initialCheck;
 	static float xDist = Mathf.Sqrt(3)/2f,zDist = 1.5f;
 	
 	Vector3 UPLEFT = new Vector3(-xDist,0,zDist),
@@ -41,9 +41,9 @@ public class MovementScript : MonoBehaviour {
 				beginMoving(DOWNLEFT);	//Move down and left
 			else if(Input.GetKey(KeyCode.C))
 				beginMoving(DOWNRIGHT);	//Move down and right
-			else if(Input.GetKey(KeyCode.J))			
+			else if(Input.GetKey(KeyCode.J) && theTank!=null)			
 				theTank.transform.Rotate(Vector3.down*Time.deltaTime*69);
-			else if(Input.GetKey(KeyCode.L))
+			else if(Input.GetKey(KeyCode.L) && theTank!=null)
 				theTank.transform.Rotate(Vector3.up*Time.deltaTime*69);
 			else if(Input.GetKey(KeyCode.I))
 				rotateBarrel(Vector3.left); //Rotate barrel up
@@ -57,15 +57,30 @@ public class MovementScript : MonoBehaviour {
 
 	void beginMoving(Vector3 dir) {
 		direction = dir;
-		bool canMove = true;
-		foreach(GameObject tnak in Gameplay.vehicles)
-			if(theTank != null && tnak != null && !tnak.Equals(theTank) && 
-				Vector3.Distance(tnak.transform.position,theTank.transform.position+direction) < 0.1f)
-				canMove = false;
+		bool canMove = true, hexFound = false;
+		//hexFound is the hex that it will land on (so it doesn't go off the map)
+		if (!initialCheck) {
+			initialCheck = true;
+			foreach (GameObject tnak in Gameplay.vehicles)
+				if (theTank != null && tnak != null && !tnak.Equals (theTank) && 
+					Vector3.Distance (tnak.transform.position, theTank.transform.position + direction) < 0.1f)
+					canMove = false;
+			foreach (HexChunk chunk in WorldManager.hexChunks) {
+				foreach (HexInfo hex in chunk.hexArray) {
+					if (Vector3.Distance (theTank.transform.position + direction, hex.worldPosition) < 0.5f && hex.full)
+						canMove = false;
+					else if (Vector3.Distance (theTank.transform.position + direction, hex.worldPosition) < 1f)
+						hexFound = true;
+				}
+			}
+		} else {
+			canMove=true;
+			hexFound=true;
+		}
 				
 		moving = true;
 
-		if(theTank!=null && Gameplay.powerPoints > 0 && canMove){
+		if(theTank!=null && Gameplay.powerPoints > 0 && canMove && hexFound){
 			float dt = Time.deltaTime;
 			theTank.transform.Translate(direction.x*dt,0,direction.z*dt,Space.World);
 			totalMoved += (Mathf.Abs(direction.x) + Mathf.Abs(direction.z))*dt;
@@ -82,6 +97,7 @@ public class MovementScript : MonoBehaviour {
 		//other directions must move total of 1.5+Mathf.Sqrt(3)
 
 		if(!moving && theTank != null){
+			initialCheck=false;
 			totalMoved = 0;
 			
 			SelectUnit.clickedHex.full = false;

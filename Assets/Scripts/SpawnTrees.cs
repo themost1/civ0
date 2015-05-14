@@ -5,7 +5,7 @@ public class SpawnTrees : MonoBehaviour{
 	public GameObject Conifer,Broadleaf;
 	
 	public void Start (){
-		foreach(HexChunk chunk in WorldManager.hexChunks)
+		/*foreach(HexChunk chunk in WorldManager.hexChunks)
 			foreach(HexInfo hex in chunk.hexArray)
 				if(hex.broadleaf||hex.conifer){
 					int lim=Random.Range(7,20);
@@ -22,6 +22,6 @@ public class SpawnTrees : MonoBehaviour{
 						else
 							Instantiate(Broadleaf,hex.worldPosition+vec,new Quaternion(0,0,0,0));
 					}		
-				}
+				}*/
 	}
 }

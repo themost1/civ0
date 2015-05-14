@@ -126,10 +126,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6593086, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
   m_IsPrefabParent: 0
@@ -170,7 +166,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 482042, guid: e9d9a7ceded984f3992d85ad696cdfd0, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 128988, guid: e9d9a7ceded984f3992d85ad696cdfd0, type: 2}
       propertyPath: m_Name
@@ -616,7 +612,7 @@ MonoBehaviour:
   chunkHolder: {fileID: 0}
   terrainTexture: {fileID: 2800000, guid: f7f9121f692ee45858a25a1d402d194d, type: 3}
   mapSize: {x: 20, y: 20}
-  chunkSize: 4
+  chunkSize: 12
 --- !u!4 &1606365463
 Transform:
   m_ObjectHideFlags: 0
@@ -990,10 +986,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d771a965335794878af3f4425b3e3cef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSpeed: 6
-  verticalSpeed: 6
-  zoomSpeed: 6
-  moveToGame: 0
+  horizontalSpeed: 5
+  verticalSpeed: 5
+  zoomSpeed: 5
+  moveToGame: 1
 --- !u!81 &1998527587
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1128,8 +1124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7809f77d37ae14c9ebb738dc008ae65e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conifer: {fileID: 100016, guid: 469edab27ab6d004d84af2c4a851bd7f, type: 3}
-  Broadleaf: {fileID: 100000, guid: c91c1eb85782d5748ace27eb4d7415bb, type: 3}
+  Conifer: {fileID: 0}
+  Broadleaf: {fileID: 0}
 --- !u!114 &1998527598
 MonoBehaviour:
   m_ObjectHideFlags: 0

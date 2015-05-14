@@ -36,13 +36,20 @@ public class CameraMovement : MonoBehaviour {
 		if (Input.GetKey (KeyCode.Quote)) {
 			//Vector3 v = Vector3.forward;
 			Vector3 v = new Vector3(0,-1/Mathf.Sqrt (3),1);
-			transform.Translate (v*verticalSpeed*Time.deltaTime);
+			if (transform.position.y>2)
+				transform.Translate (v*verticalSpeed*Time.deltaTime);
 			
 		}
 		else if (Input.GetKey (KeyCode.Slash)) {
 			//Vector3 v = Vector3.back;
 			Vector3 v = new Vector3(0,1/Mathf.Sqrt (3),-1);
 			transform.Translate (v*zoomSpeed*Time.deltaTime);
+		}
+		else if (Input.GetKey (KeyCode.LeftControl)) {
+			//Vector3 v = Vector3.back;
+			Vector3 v = new Vector3(0,1/Mathf.Sqrt (3),-1);
+			transform.Rotate (Vector3.up*10*Mathf.Sqrt (3)*Time.deltaTime);
+			transform.Rotate (Vector3.forward*1/Mathf.Sqrt (3)*Time.deltaTime);
 		}
 	}
 }

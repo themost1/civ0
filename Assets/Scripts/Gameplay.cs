@@ -66,6 +66,8 @@ public class Gameplay : MonoBehaviour {
 							mr.material.color = Color.blue;
 						else if(currentPlayer == 2)
 							mr.material.color = Color.red;
+					GameObject obj = vehicle.transform.Find ("HealthBar").gameObject;
+					obj.GetComponent<Renderer>().material.color = Color.green;
 					
 					if(currentPlayer == 2)
 						vehicle.transform.Rotate(0,180f,0);
