@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class Gameplay : MonoBehaviour {
-	public static float cooldown=0;
 	public float spawnRadius = 4f;
 	public static int currentPlayer=1;
 	public GameObject tank;
@@ -16,7 +15,6 @@ public class Gameplay : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		cooldown = 0.1f;
 		calcCosts();
 	}
 	
@@ -33,20 +31,20 @@ public class Gameplay : MonoBehaviour {
 		dankStyle.normal.textColor=new Color(255,255,255);
 		dankStyle.fontSize=14;
 		
-//		GUI.Label(new Rect(0,0,100,30),"  Powerpoints: "+powerPoints,dankStyle);
-//		GUI.Label(new Rect(100,0,150,30),"  Current player: "+currentPlayer,dankStyle);
-//		GUI.Label(new Rect(250,0,80,30),"  Turns: "+turns,dankStyle);
-//		GUI.Label(new Rect(330,0,80,30),"  Tank Cost: "+tankCost,dankStyle);
-//		GUI.Label(new Rect(410,0,100,30),"  Wall Cost: "+wallCost,dankStyle);
-		string instr="  QEADZC to move, IJKL to rotate, 1 to place tank, 2 to place wall", msg="  It is the first turns -- you MUST BUILD A TANK to survive!";
+		string 	instr="  QEADZC to move, IJKL to rotate, 1 to place tank, 2 to place wall", 
+				instr2="  Space to fire, F to reload, / to zoom out, ' to zoom in",
+				instr3="  Arrow keys to pan the camera",
+				msg="  It is the first turns -- you MUST BUILD A TANK to survive!";
 		GUI.Label(new Rect(0,0,520,30),"  Powerpoints: "+powerPoints+"    Current player: "+currentPlayer
 		          +"    Turns: "+turns+ "    Tank Cost: "+tankCost+"    Wall Cost: "+wallCost,dankStyle);
 		if (turns == 1) {
-			GUI.Label (new Rect (0, 20, 520, 30), instr, dankStyle);
-			GUI.Label (new Rect (0, 40, 520, 30), msg, dankStyle);
+			GUI.Label (new Rect (0, 30, 520, 20), instr, dankStyle);
+			GUI.Label (new Rect (0, 50, 520, 20), instr2, dankStyle);
+			GUI.Label(new Rect(0,70,520,20),instr3,dankStyle);
+			GUI.Label (new Rect (0,90,520,20),msg,dankStyle);
 		}
 		if (gameOver) {
-			GUI.Label (new Rect (Screen.width/2-120, Screen.height/2-20, 227, 40), "   Player " +winner+" won! Press r to restart.", dankStyle);
+			GUI.Label (new Rect (Screen.width/2-110, Screen.height/2-20, 220, 40), "   Player " +winner+" won! Press r to restart.", dankStyle);
 		}
 	}
 	
@@ -67,8 +65,6 @@ public class Gameplay : MonoBehaviour {
 			gameOver=true;
 			winner = 1;
 		}
-		if (cooldown>0)
-			cooldown += Time.deltaTime;
 			
 		if (Input.GetKey ("1") && powerPoints >= tankCost){
 			GameObject vehicle = null;
