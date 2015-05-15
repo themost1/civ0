@@ -13,7 +13,6 @@ public class CameraMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey(KeyCode.RightArrow)) {
-
 			transform.Translate(Vector3.right*horizontalSpeed*Time.deltaTime);
 		}
 		else if (Input.GetKey(KeyCode.LeftArrow)) {
