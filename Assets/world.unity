@@ -1074,6 +1074,7 @@ MonoBehaviour:
   spawnRadius: 4
   tank: {fileID: 112792, guid: 7dfd75130ee614b2b9e24201e07593a9, type: 2}
   vNum: 0
+  winner: 0
 --- !u!114 &1998527593
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,11 +7,12 @@ public class Gameplay : MonoBehaviour {
 	public static int currentPlayer=1;
 	public GameObject tank;
 	public static GameObject selected;
-	public int vNum;
+	public int vNum, winner=0;
 	public static ArrayList vehicles = new ArrayList();
 	public static int powerPoints = 10;
 	public static int turns = 1;
 	public static int tankCost, wallCost;
+	public static bool gameOver=false;
 
 	// Use this for initialization
 	void Start () {
@@ -37,13 +38,35 @@ public class Gameplay : MonoBehaviour {
 //		GUI.Label(new Rect(250,0,80,30),"  Turns: "+turns,dankStyle);
 //		GUI.Label(new Rect(330,0,80,30),"  Tank Cost: "+tankCost,dankStyle);
 //		GUI.Label(new Rect(410,0,100,30),"  Wall Cost: "+wallCost,dankStyle);
-	
+		string instr="  QEADZC to move, IJKL to rotate, 1 to place tank, 2 to place wall", msg="  It is the first turns -- you MUST BUILD A TANK to survive!";
 		GUI.Label(new Rect(0,0,520,30),"  Powerpoints: "+powerPoints+"    Current player: "+currentPlayer
 		          +"    Turns: "+turns+ "    Tank Cost: "+tankCost+"    Wall Cost: "+wallCost,dankStyle);
+		if (turns == 1) {
+			GUI.Label (new Rect (0, 20, 520, 30), instr, dankStyle);
+			GUI.Label (new Rect (0, 40, 520, 30), msg, dankStyle);
+		}
+		if (gameOver) {
+			GUI.Label (new Rect (Screen.width/2-120, Screen.height/2-20, 227, 40), "   Player " +winner+" won! Press r to restart.", dankStyle);
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		bool p1alive = false, p2alive = false;
+		foreach (GameObject go in vehicles) {
+			if (go.GetComponent<Vehicle>().player==1)
+				p1alive=true;
+			else if (go.GetComponent<Vehicle>().player==2)
+				p2alive=true;
+		}
+		if (turns > 1 && !p1alive) {
+			gameOver=true;
+			winner = 2;
+		}
+		else if (turns > 1 && !p2alive) {
+			gameOver=true;
+			winner = 1;
+		}
 		if (cooldown>0)
 			cooldown += Time.deltaTime;
 			
