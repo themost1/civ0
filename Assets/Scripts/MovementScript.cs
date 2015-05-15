@@ -59,7 +59,7 @@ public class MovementScript : MonoBehaviour {
 		direction = dir;
 		bool canMove = true, hexFound = false;
 		//hexFound is the hex that it will land on (so it doesn't go off the map)
-		if (!initialCheck) {
+		if (!initialCheck&&theTank!=null) {
 			initialCheck = true;
 			foreach (GameObject tnak in Gameplay.vehicles)
 				if (theTank != null && tnak != null && !tnak.Equals (theTank) && 

@@ -21,21 +21,25 @@ public class Gameplay : MonoBehaviour {
 	
 	void OnGUI(){
 		Texture2D dankBG = new Texture2D(1,1);
-		dankBG.SetPixel(1,1,new Color(50,50,50));
+		dankBG.SetPixel(1,1,new Color(0,0,0));
 		dankBG.wrapMode = TextureWrapMode.Repeat;
 		dankBG.Apply();
 		GUIStyle dankStyle = new GUIStyle();
 		GUIStyleState dankSS = new GUIStyleState();
 		dankSS.background = dankBG;
 		dankStyle.normal = dankSS;
-		dankStyle.alignment = TextAnchor.MiddleCenter;
+		dankStyle.alignment = TextAnchor.MiddleLeft;
+		dankStyle.normal.textColor=new Color(255,255,255);
+		dankStyle.fontSize=14;
+		
+//		GUI.Label(new Rect(0,0,100,30),"  Powerpoints: "+powerPoints,dankStyle);
+//		GUI.Label(new Rect(100,0,150,30),"  Current player: "+currentPlayer,dankStyle);
+//		GUI.Label(new Rect(250,0,80,30),"  Turns: "+turns,dankStyle);
+//		GUI.Label(new Rect(330,0,80,30),"  Tank Cost: "+tankCost,dankStyle);
+//		GUI.Label(new Rect(410,0,100,30),"  Wall Cost: "+wallCost,dankStyle);
 	
-		GUI.Label(new Rect(25,25,100,80), "Powerpoints: " + powerPoints
-											+ "\nCurrent player: " + currentPlayer
-											+ "\nTurns: "+turns
-											+ "\nTank Cost: "+tankCost
-											+ "\nWall Cost: "+wallCost
-		          							,dankStyle);
+		GUI.Label(new Rect(0,0,520,30),"  Powerpoints: "+powerPoints+"    Current player: "+currentPlayer
+		          +"    Turns: "+turns+ "    Tank Cost: "+tankCost+"    Wall Cost: "+wallCost,dankStyle);
 	}
 	
 	// Update is called once per frame
