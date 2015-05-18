@@ -69,8 +69,14 @@ public class MovementScript : MonoBehaviour {
 				foreach (HexInfo hex in chunk.hexArray) {
 					if (Vector3.Distance (theTank.transform.position + direction, hex.worldPosition) < 0.5f && hex.full)
 						canMove = false;
-					else if (Vector3.Distance (theTank.transform.position + direction, hex.worldPosition) < 1f)
+					else if (Vector3.Distance (theTank.transform.position + direction, hex.worldPosition) < 1f){
 						hexFound = true;
+						if(hex.conifer||hex.broadleaf)
+							Gameplay.powerPoints--;
+						else if(hex.brimstone)
+							canMove=false;
+							
+					}
 				}
 			}
 		} else {

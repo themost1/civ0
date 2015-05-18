@@ -25,6 +25,7 @@ public class HexInfo
 	
 	public bool conifer = false;
 	public bool broadleaf = false;
+	public bool brimstone = false;
 	
 	//basic hexagon mesh making
 	public Vector3[] vertices;
@@ -105,6 +106,8 @@ public class HexInfo
 				conifer = true;
 			else if(randx == 2f && randy == 3f)
 				broadleaf = true;
+			else if(randx == 0 && randy == 3f)
+				brimstone = true;
 		}
 		else{
 			randx = 3f;

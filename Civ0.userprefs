@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Gameplay.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SpawnCube.cs">
     <Files>
-      <File FileName="Assets/Scripts/Gameplay.cs" Line="44" Column="28" />
+      <File FileName="Assets/Scripts/MovementScript.cs" Line="77" Column="22" />
+      <File FileName="Assets/Scripts/SpawnCube.cs" Line="8" Column="112" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
