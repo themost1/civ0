@@ -58,6 +58,8 @@ public class MovementScript : MonoBehaviour {
 	void beginMoving(Vector3 dir) {
 		direction = dir;
 		bool canMove = true, hexFound = false;
+		int movementPoints=0;
+		
 		//hexFound is the hex that it will land on (so it doesn't go off the map)
 		if (!initialCheck&&theTank!=null) {
 			initialCheck = true;
@@ -72,28 +74,29 @@ public class MovementScript : MonoBehaviour {
 					else if (Vector3.Distance (theTank.transform.position + direction, hex.worldPosition) < 1f){
 						hexFound = true;
 						if(hex.conifer||hex.broadleaf)
-							Gameplay.powerPoints--;
+							movementPoints++;
 						else if(hex.brimstone)
 							canMove=false;
 							
 					}
 				}
 			}
-		} else {
+		} 
+		else {
 			canMove=true;
 			hexFound=true;
 		}
 				
 		moving = true;
 
-		if(theTank!=null && Gameplay.powerPoints > 0 && canMove && hexFound){
+		if(theTank!=null && Gameplay.powerPoints > movementPoints && canMove && hexFound){
 			float dt = Time.deltaTime;
 			theTank.transform.Translate(direction.x*dt,0,direction.z*dt,Space.World);
 			totalMoved += (Mathf.Abs(direction.x) + Mathf.Abs(direction.z))*dt;
 
 			if(totalMoved >= ((Mathf.Abs(direction.x) + Mathf.Abs(direction.z))*(1-dt))){
 				moving = false;
-				Gameplay.powerPoints--;
+				Gameplay.powerPoints -= movementPoints;
 			}
 		}
 		else
