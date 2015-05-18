@@ -84,7 +84,7 @@ public class Gameplay : MonoBehaviour {
 						canSpawn = true;
 			
 			if(canSpawn){
-				if(SelectUnit.clickedHex != null && !SelectUnit.clickedHex.full){
+				if(SelectUnit.clickedHex != null && !SelectUnit.clickedHex.full && !SelectUnit.clickedHex.brimstone){
 					powerPoints -= tankCost;
 					Vector3 pos = SelectUnit.clickedHex.worldPosition;
 					pos.y = 0.4f;
