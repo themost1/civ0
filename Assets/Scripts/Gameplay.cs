@@ -11,11 +11,14 @@ public class Gameplay : MonoBehaviour {
 	public static int powerPoints = 10;
 	public static int turns = 1;
 	public static int tankCost, wallCost;
-	public static bool gameOver=false;
+	public static bool gameOver=false, showInstructions=false;
+	public static string warningText;
+	public int warningCounter=0;
 
 	// Use this for initialization
 	void Start () {
 		calcCosts();
+		warningText="";
 	}
 	
 	void OnGUI(){
@@ -31,25 +34,41 @@ public class Gameplay : MonoBehaviour {
 		dankStyle.normal.textColor=new Color(255,255,255);
 		dankStyle.fontSize=14;
 		
-		string 	instr="  QEADZC to move, IJKL to rotate, 1 to place tank, 2 to place wall", 
+		string 	instr="  QEADZC to move, IJKL to rotate, 1 to place tank, 2 to place wall ", 
 				instr2="  Space to fire, F to reload, / to zoom out, ' to zoom in",
 				instr3="  Arrow keys to pan the camera",
-				msg="  It is the first turns -- you MUST BUILD A TANK to survive!";
+				msg="  It is the first turn -- you MUST BUILD A TANK to survive!";
 		GUI.Label(new Rect(0,0,520,30),"  Powerpoints: "+powerPoints+"    Current player: "+currentPlayer
 		          +"    Turns: "+turns+ "    Tank Cost: "+tankCost+"    Wall Cost: "+wallCost,dankStyle);
-		if (turns == 1) {
+		if (showInstructions) {
 			GUI.Label (new Rect (0, 30, 520, 20), instr, dankStyle);
 			GUI.Label (new Rect (0, 50, 520, 20), instr2, dankStyle);
 			GUI.Label(new Rect(0,70,520,20),instr3,dankStyle);
-			GUI.Label (new Rect (0,90,520,20),msg,dankStyle);
+			GUI.Label(new Rect(0,90,520,20),"  Can't spawn on brimstone, must spawn nearby already existing tanks if possible",dankStyle);
+			GUI.Label(new Rect(0,110,520,20),"  Moving through forests costs double",dankStyle);
+			GUI.Label (new Rect (0,130,520,20),msg,dankStyle);
 		}
+		else
+			GUI.Label (new Rect (0, 30, 520, 20),"  Press F to expand instructional menu", dankStyle);
 		if (gameOver) {
-			GUI.Label (new Rect (Screen.width/2-110, Screen.height/2-20, 220, 40), "   Player " +winner+" won! Press r to restart.", dankStyle);
+			GUI.Label (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 20, 220, 40), "   Player " + winner + " won! Press r to restart.", dankStyle);
+		} else if (!(warningText=="")) {
+			//GUI.Label (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 20, 190, 40), "   "+warningText, dankStyle);
+			if (warningCounter==0)
+				warningCounter=100;
+			warningCounter--;
+			if (warningCounter==1) {
+				warningCounter=0;
+				warningText="";
+			}
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (powerPoints == 0) {
+			EndTurnButtonScript.endTurn();
+		}
 		bool p1alive = false, p2alive = false;
 		foreach (GameObject go in vehicles) {
 			if (go.GetComponent<Vehicle>().player==1)
@@ -65,48 +84,53 @@ public class Gameplay : MonoBehaviour {
 			gameOver=true;
 			winner = 1;
 		}
-			
-		if (Input.GetKey ("1") && powerPoints >= tankCost){
+		if (Input.GetKey ("1") && powerPoints >= tankCost) {
 			GameObject vehicle = null;
 
 			bool canSpawn = false;
 			int playersTanks = 0; //number of tanks for that player
 
-			foreach(GameObject go in vehicles)
-				if(go.GetComponent<Vehicle>().player == currentPlayer)
+			foreach (GameObject go in vehicles)
+				if (go.GetComponent<Vehicle> ().player == currentPlayer)
 					playersTanks++;
 
-			if(playersTanks == 0)
+			if (playersTanks == 0)
 				canSpawn = true;
 			else
-				foreach(GameObject go in vehicles)
-					if(Vector3.Distance(go.transform.position,SelectUnit.clickedHex.worldPosition) < spawnRadius)
+				foreach (GameObject go in vehicles)
+					if (Vector3.Distance (go.transform.position, SelectUnit.clickedHex.worldPosition) < spawnRadius)
 						canSpawn = true;
 			
-			if(canSpawn){
-				if(SelectUnit.clickedHex != null && !SelectUnit.clickedHex.full && !SelectUnit.clickedHex.brimstone){
+			if (canSpawn) {
+				if (SelectUnit.clickedHex != null && !SelectUnit.clickedHex.full && !SelectUnit.clickedHex.brimstone) {
 					powerPoints -= tankCost;
 					Vector3 pos = SelectUnit.clickedHex.worldPosition;
 					pos.y = 0.4f;
-					vehicle = (GameObject)Instantiate(tank,pos,new Quaternion(0,0,0,0));
-					vehicle.GetComponent<Vehicle>().player = currentPlayer;
-					MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer>();
-					foreach(MeshRenderer mr in chillin)
-						if(currentPlayer == 1)	
+					vehicle = (GameObject)Instantiate (tank, pos, new Quaternion (0, 0, 0, 0));
+					vehicle.GetComponent<Vehicle> ().player = currentPlayer;
+					MeshRenderer[] chillin = vehicle.GetComponentsInChildren<MeshRenderer> ();
+					foreach (MeshRenderer mr in chillin)
+						if (currentPlayer == 1)	
 							mr.material.color = Color.blue;
-						else if(currentPlayer == 2)
+						else if (currentPlayer == 2)
 							mr.material.color = Color.red;
 					GameObject obj = vehicle.transform.Find ("HealthBar").gameObject;
-					obj.GetComponent<Renderer>().material.color = Color.green;
+					obj.GetComponent<Renderer> ().material.color = Color.green;
 					
-					if(currentPlayer == 2)
-						vehicle.transform.Rotate(0,180f,0);
+					if (currentPlayer == 2)
+						vehicle.transform.Rotate (0, 180f, 0);
 
-					vehicles.Add(vehicle);
+					vehicles.Add (vehicle);
 
 					SelectUnit.clickedHex.full = true;
 				}
 			}
+			else if (SelectUnit.clickedHex.full)
+				Gameplay.warningText="Hex is full!";
+			else if (SelectUnit.clickedHex.brimstone)
+				Gameplay.warningText="Can't spawn on brimstone!";
+		} else if (Input.GetKey ("1")) {
+			Gameplay.warningText="Not enough powerpoints!";
 		}
 
 		selectVehicle ();

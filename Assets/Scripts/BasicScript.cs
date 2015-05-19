@@ -16,6 +16,7 @@ public class BasicScript : MonoBehaviour {
 	{
 		if(col.gameObject.name == "Ball(Clone)")
 		{
+			GunShot.makeExplosion=true;
 			col.gameObject.GetComponent<BallPosition>().explode();
 			Destroy(col.gameObject);
 			

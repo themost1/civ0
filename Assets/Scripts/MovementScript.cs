@@ -73,10 +73,16 @@ public class MovementScript : MonoBehaviour {
 						canMove = false;
 					else if (Vector3.Distance (theTank.transform.position + direction, hex.worldPosition) < 1f){
 						hexFound = true;
+						movementPoints=1;
 						if(hex.conifer||hex.broadleaf)
 							movementPoints++;
 						else if(hex.brimstone)
 							canMove=false;
+						if (canMove && Gameplay.powerPoints>=movementPoints)
+							Gameplay.powerPoints -= movementPoints;
+						else {
+							canMove=false;
+						}
 							
 					}
 				}
@@ -86,17 +92,19 @@ public class MovementScript : MonoBehaviour {
 			canMove=true;
 			hexFound=true;
 		}
-				
+		if (Gameplay.powerPoints < movementPoints)
+			Gameplay.warningText = "Not enough powerpoints!";
+		else if (SelectUnit.clickedHex.brimstone)	
+			Gameplay.warningText = "Can't move on brimstone!";
 		moving = true;
-
-		if(theTank!=null && Gameplay.powerPoints > movementPoints && canMove && hexFound){
+		movementPoints = 0;
+		if(theTank!=null && canMove && hexFound){
 			float dt = Time.deltaTime;
 			theTank.transform.Translate(direction.x*dt,0,direction.z*dt,Space.World);
 			totalMoved += (Mathf.Abs(direction.x) + Mathf.Abs(direction.z))*dt;
 
 			if(totalMoved >= ((Mathf.Abs(direction.x) + Mathf.Abs(direction.z))*(1-dt))){
 				moving = false;
-				Gameplay.powerPoints -= movementPoints;
 			}
 		}
 		else
@@ -134,26 +142,27 @@ public class MovementScript : MonoBehaviour {
 	}
 	
 	void rotateBarrel(Vector3 dir){
-		Transform barrel = theTank.transform.Find("MainGun");
-		float dt = Time.deltaTime*69f;
-		bool canRotate = false;
-		
-		if(dir == Vector3.right){
-			theTank.GetComponent<Vehicle>().barrelRotation -= dt;
-			if(theTank.GetComponent<Vehicle>().barrelRotation >= -23f)
-				canRotate = true;
-			else
-				theTank.GetComponent<Vehicle>().barrelRotation = -23f;
+		if (theTank != null) {
+			Transform barrel = theTank.transform.Find ("MainGun");
+			float dt = Time.deltaTime * 69f;
+			bool canRotate = false;
+			
+			if (dir == Vector3.right) {
+				theTank.GetComponent<Vehicle> ().barrelRotation -= dt;
+				if (theTank.GetComponent<Vehicle> ().barrelRotation >= -23f)
+					canRotate = true;
+				else
+					theTank.GetComponent<Vehicle> ().barrelRotation = -23f;
+			} else {
+				theTank.GetComponent<Vehicle> ().barrelRotation += dt;
+				if (theTank.GetComponent<Vehicle> ().barrelRotation <= 110f)
+					canRotate = true;
+				else
+					theTank.GetComponent<Vehicle> ().barrelRotation = 110f;
+			}
+			
+			if (canRotate)
+				barrel.Rotate (dir * dt);
 		}
-		else{
-			theTank.GetComponent<Vehicle>().barrelRotation += dt;
-			if(theTank.GetComponent<Vehicle>().barrelRotation <= 110f)
-				canRotate = true;
-			else
-				theTank.GetComponent<Vehicle>().barrelRotation = 110f;
-		}
-		
-		if(canRotate)
-			barrel.Rotate(dir*dt);
 	}
 }

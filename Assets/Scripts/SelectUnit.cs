@@ -36,8 +36,6 @@ public class SelectUnit : MonoBehaviour {
 				}
 				clickedHex=theHex;
 				
-			} else {
-				Debug.Log("No hit");
 			}
 		} 
 	}

@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{7B699D1B-87A2-E672-1011-8CD675A93026}</ProjectGuid>
+	<ProjectGuid>{17839904-C9BF-2449-CC5E-26EA9F30767A}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\EndTurnButtonScript.cs" />
      <Compile Include="Assets\Scripts\FireScript.cs" />
      <Compile Include="Assets\Scripts\Gameplay.cs" />
+     <Compile Include="Assets\Scripts\GunShot.cs" />
      <Compile Include="Assets\Scripts\HexChunk.cs" />
      <Compile Include="Assets\Scripts\HexInfo.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
@@ -88,7 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{4F935CFB-F700-D089-019C-FC018E5619CD}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{2ED7EF63-A148-E464-C701-1F6ED797132E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -12,6 +12,7 @@ public class CubeScript : MonoBehaviour {
 			Destroy(col.gameObject);
 			
 			health -= 40f;
+			GunShot.makeExplosion=true;
 			transform.localScale = new Vector3(transform.localScale.x,transform.localScale.y*1/2,transform.localScale.z);
 			if(health <= 0f){
 				explode();

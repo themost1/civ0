@@ -15,5 +15,5 @@ public class BallPosition : MonoBehaviour {
 	
 	public void explode(){
 		Instantiate(Explosion,gameObject.transform.position,new Quaternion(0,0,0,0));
-		}
+	}
 }
