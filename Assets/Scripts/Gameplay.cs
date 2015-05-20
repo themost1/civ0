@@ -67,9 +67,9 @@ public class Gameplay : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (powerPoints == 0) {
-			EndTurnButtonScript.endTurn();
-		}
+//		if (powerPoints == 0) {
+//			EndTurnButtonScript.endTurn();
+//		}
 		bool p1alive = false, p2alive = false;
 		foreach (GameObject go in vehicles) {
 			if (go.GetComponent<Vehicle>().player==1)
