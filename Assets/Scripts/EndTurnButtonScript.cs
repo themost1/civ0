@@ -2,11 +2,10 @@
 using System.Collections;
 
 public class EndTurnButtonScript : MonoBehaviour {
-	public int p1pp=0;
-	public int p2pp=0;
-	bool firstTurn=true;
+	public static int p1pp=0, p2pp=0;
+	static bool firstTurn=true;
 
-	public void endTurn(){
+	public static void endTurn(){
 		if(Gameplay.currentPlayer == 1){
 			p1pp=Gameplay.powerPoints;
 			Gameplay.currentPlayer = 2;
@@ -24,5 +23,8 @@ public class EndTurnButtonScript : MonoBehaviour {
 			Gameplay.turns++;
 			Gameplay.calcCosts();
 		}
+	}
+	public void endTurn2(){
+		endTurn ();
 	}
 }

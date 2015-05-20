@@ -40,9 +40,9 @@ public class CameraMovement : MonoBehaviour {
 		}
 		else if (Input.GetKey (KeyCode.LeftControl)) {
 			//Vector3 v = Vector3.back;
-			Vector3 v = new Vector3(0,1/Mathf.Sqrt (3),-1);
-			transform.Rotate (Vector3.up*10*Mathf.Sqrt (3)*Time.deltaTime);
-			transform.Rotate (Vector3.forward*1/Mathf.Sqrt (3)*Time.deltaTime);
+			//Vector3 v = new Vector3(0,1/Mathf.Sqrt (3),-1);
+			//transform.Rotate (Vector3.up*10*Mathf.Sqrt (3)*Time.deltaTime);
+			//transform.Rotate (Vector3.forward*1/Mathf.Sqrt (3)*Time.deltaTime);
 		}
 	}
 }

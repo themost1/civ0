@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\EndTurnButtonScript.cs" />
      <Compile Include="Assets\Scripts\FireScript.cs" />
      <Compile Include="Assets\Scripts\Gameplay.cs" />
+     <Compile Include="Assets\Scripts\GunShot.cs" />
      <Compile Include="Assets\Scripts\HexChunk.cs" />
      <Compile Include="Assets\Scripts\HexInfo.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />

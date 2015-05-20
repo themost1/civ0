@@ -11,6 +11,9 @@ public class InputManager : MonoBehaviour {
 			restart();
 			Application.LoadLevel(Application.loadedLevelName);
 		}
+		if(Input.GetKeyDown (KeyCode.F)){
+			Gameplay.showInstructions=!Gameplay.showInstructions;
+		}
 	}
 	
 	void restart(){
