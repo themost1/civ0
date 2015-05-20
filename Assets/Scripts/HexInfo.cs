@@ -113,6 +113,7 @@ public class HexInfo
 			randx = 3f;
 			randy = 1f;
 		}
+		
 		float tUnit = 0.25f;
 		Vector2[] temp = {
 			new Vector2(randx*tUnit, tUnit*(randy + 0.25f)),

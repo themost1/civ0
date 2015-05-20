@@ -34,6 +34,7 @@ public class Gameplay : MonoBehaviour {
 		string 	instr="  QEADZC to move, IJKL to rotate, 1 to place tank, 2 to place wall", 
 				instr2="  Space to fire, F to reload, / to zoom out, ' to zoom in",
 				instr3="  Arrow keys to pan the camera",
+				instr4="  Brimstone is a no-go, forest cost double movement",
 				msg="  It is the first turns -- you MUST BUILD A TANK to survive!";
 		GUI.Label(new Rect(0,0,520,30),"  Powerpoints: "+powerPoints+"    Current player: "+currentPlayer
 		          +"    Turns: "+turns+ "    Tank Cost: "+tankCost+"    Wall Cost: "+wallCost,dankStyle);
@@ -41,10 +42,12 @@ public class Gameplay : MonoBehaviour {
 			GUI.Label (new Rect (0, 30, 520, 20), instr, dankStyle);
 			GUI.Label (new Rect (0, 50, 520, 20), instr2, dankStyle);
 			GUI.Label(new Rect(0,70,520,20),instr3,dankStyle);
-			GUI.Label (new Rect (0,90,520,20),msg,dankStyle);
+			GUI.Label (new Rect(0,90,520,20),instr4,dankStyle);
+			GUI.Label (new Rect (0,110,520,20),msg,dankStyle);
 		}
 		if (gameOver) {
-			GUI.Label (new Rect (Screen.width/2-110, Screen.height/2-20, 220, 40), "   Player " +winner+" won! Press r to restart.", dankStyle);
+			GUI.Label (new Rect (Screen.width/2-110, Screen.height/2-20, 220, 40), 
+			"   Player " +winner+" won! Press r to restart.", dankStyle);
 		}
 	}
 	
